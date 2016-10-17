@@ -176,9 +176,9 @@ body {
 
 @media screen and (max-width: 37.5em) {
     #container .profile-picture .img {
-        width: 64px;
-        height: 64px;
-        border-radius: 64px;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
     }
     #container p {
         font-size: 0.813em;
