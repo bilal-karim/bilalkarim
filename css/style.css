@@ -180,6 +180,9 @@ body {
         height: 80px;
         border-radius: 80px;
     }
+    #container h1 {
+        font-size: 0.875em;
+    }
     #container p {
         font-size: 0.813em;
     }
