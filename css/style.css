@@ -1,1 +1,175 @@
-*{margin:0;padding:0;box-sizing:border-box}@font-face{font-family:'Montserrat';font-style:normal;font-weight:400;src:local(Montserrat-Regular),url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff")}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local(Roboto-Regular),url(http://fonts.gstatic.com/s/roboto/v14/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format("woff")}html,body{margin:0;padding:0;font-family:'Roboto',Helvetica,Arial,sans-serif;font-size:1.125em;color:#fff;background:#1c080d url(../img/bk-image.jpg);background-size:cover;background-position:right center;background-repeat:no-repeat;background-attachment:fixed;-webkit-font-rendering:antialiased;-moz-osx-font-smoothing:grayscale;height:auto}#container{width:100%;height:auto;margin:0 auto}.content{width:100%;margin:auto;position:absolute;top:50%;left:50%;padding:0 5%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}h1{font-family:'Montserrat',Helvetica,Arial,sans-serif;font-size:5.5em;font-kerning:auto;text-transform:uppercase;text-align:left;padding:0;margin:0;color:#8d9fc8;text-indent:-10px}p{line-height:150%;text-align:left;width:68%}.contact{margin:1em 0}ul{font-size:.813em;list-style-type:none;text-align:left;width:100%;height:3.5em;padding:0;margin:0}li{display:inline-block;margin:5px;text-align:justify}li:first-child{margin-left:0}a:link,a:visited{color:#ba4a46;text-decoration:none}a:hover,a:active{color:#8d9fc8;transition:color .2s linear;-webkit-transition:color .2s linear}@media screen and (max-width: 1254px){h1{font-size:3.5em;text-indent:-4px}body{font-size:.875em}}@media screen and (max-width: 568px){h1{font-size:3em;text-indent:-3px}p{width:100%}body{font-size:.813em}html{background:#1c080d url(../img/bk-image-mb.jpg);background-size:cover;background-position:right center;background-repeat:no-repeat;background-attachment:fixed}ul{font-size:.75em}}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(16, 16, 16, 1);
+    -webkit-font-rendering: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+}
+
+body {
+    padding: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05), 0 2px 10px -1px rgba(0, 0, 0, .15), 0 1px 2px 0 rgba(0, 0, 0, .22);
+    background: #FFF;
+}
+
+#container .profile-picture {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+#container .profile-picture .img {
+    background: #AAA url('../img/bilal-karim.png');
+    background-size: contain;
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#container h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#container h1 sup {
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: rgba(16, 16, 16, 0.5);
+    font-size: 0.750em;
+}
+
+#container p {
+    font-size: 0.875em;
+    max-width: 560px;
+    text-align: center;
+    font-weight: 300;
+    padding: 12px 24px;
+    color: rgba(16, 16, 16, 0.7);
+}
+
+#container a {
+    text-decoration: none;
+    color: rgba(16, 16, 16, 1);
+    border-bottom: 1px solid rgba(16, 16, 16, 0.15);
+    padding-bottom: 2px;
+}
+
+#container a:hover, #container a:active {
+    border: 0;
+}
+
+#container .networks {
+    width: 100%;
+    text-align: center;
+    padding-top: 24px;
+}
+
+#container .networks a {
+    border: 0;
+    color: rgba(16, 16, 16, 0.5);
+}
+
+#container .networks a:hover {
+    color: rgba(16, 16, 16, 1);
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?76119386');
+    src: url('../font/fontello.eot?76119386#iefix') format('embedded-opentype'), url('../font/fontello.woff2?76119386') format('woff2'), url('../font/fontello.woff?76119386') format('woff'), url('../font/fontello.ttf?76119386') format('truetype'), url('../font/fontello.svg?76119386#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.icon-twitter:before {
+    content: '\f099';
+}
+
+.icon-github-circled:before {
+    content: '\f09b';
+}
+
+.icon-linkedin:before {
+    content: '\f0e1';
+}
+
+.icon-instagram:before {
+    content: '\f16d';
+}
