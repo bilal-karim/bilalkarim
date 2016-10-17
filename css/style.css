@@ -124,7 +124,7 @@ body {
 #container .networks {
     width: 100%;
     text-align: center;
-    padding-top: 24px;
+    padding-top: 12px;
 }
 
 #container .networks a {
@@ -172,4 +172,15 @@ body {
 
 .icon-instagram:before {
     content: '\f16d';
+}
+
+@media screen and (max-width: 37.5em) {
+    #container .profile-picture .img {
+        width: 64px;
+        height: 64px;
+        border-radius: 64px;
+    }
+    #container p {
+        font-size: 0.813em;
+    }
 }
