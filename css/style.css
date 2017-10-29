@@ -55,6 +55,51 @@ body {
     padding: 10px;
 }
 
+.gr-1 {
+    background: #6f86d6;
+    background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+
+.gr-2 {
+    background: #005bea;
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.gr-3 {
+    background: #21d4fd;
+    background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+
+.gr-4 {
+    background: #f4d03f;
+    background: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+}
+
+.gr-5 {
+    background: #6713d2;
+    background: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+}
+
+.gr-6 {
+    background: #FF719A;
+    background: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+}
+
+.gr-7 {
+    background: #40E0D0;
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+}
+
+.gr-8 {
+    background: #ee0979;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+}
+
+.gr-9 {
+    background: #ffe259;
+    background: linear-gradient(to right, #ffa751, #ffe259);
+}
+
 #container {
     display: flex;
     flex-direction: row;
@@ -63,7 +108,7 @@ body {
     align-items: center;
     align-content: center;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05), 0 2px 10px -1px rgba(0, 0, 0, .15), 0 1px 2px 0 rgba(0, 0, 0, .22);
     background: #FFF;
 }
@@ -153,7 +198,7 @@ body {
     speak: none;
     display: inline-block;
     text-decoration: inherit;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     font-variant: normal;
     text-transform: none;
@@ -175,7 +220,7 @@ body {
     content: '\f16d';
 }
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 41.688em) {
     #container .profile-picture .img {
         width: 100px;
         height: 100px;
@@ -183,6 +228,12 @@ body {
     }
     #container h1, #container p {
         font-size: 1em;
+    }
+    #container p {
+        max-width: none;
+    }
+    #container .networks {
+        padding: 0;
     }
 }
 
