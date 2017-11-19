@@ -41,11 +41,11 @@ table {
 
 html, body {
     margin: 0;
-    font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1em;
-    line-height: 1.6;
+    line-height: 1.5;
     background: rgba(0, 0, 0, 0.1);
-    color: rgba(16, 16, 16, 1);
+    color: rgba(16, 16, 16, 0.88);
     -webkit-font-rendering: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
@@ -102,10 +102,15 @@ body {
 
 #container {
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-align-content: center;
     align-content: center;
     height: 100%;
     border-radius: 4px;
@@ -116,67 +121,79 @@ body {
 #container .profile-picture {
     width: 100%;
     text-align: center;
-    padding: 12px;
 }
 
 #container .profile-picture .img {
     background: #AAA url('../img/bilal-karim.png');
     background-size: contain;
-    width: 148px;
-    height: 148px;
-    border-radius: 148px;
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
     display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 #container h1 {
     width: 100%;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.250em;
+    font-weight: 700;
+    font-size: 1.375em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-#container h1 sup {
+/*#container h1 sup {
     text-transform: capitalize;
     font-weight: 400;
     letter-spacing: 0;
     color: rgba(16, 16, 16, 0.5);
     font-size: 0.750em;
+}*/
+
+#container h2 {
+    font-size: 0.875em;
+    text-align: center;
+    font-weight: 500;
+    color: rgba(16, 16, 16, 0.68);
+}
+
+#container .short-bio, #container .long-bio {
+    width: 100%;
 }
 
 #container p {
     font-size: 1.125em;
-    max-width: 555px;
+    max-width: 580px;
+    margin: 0 auto;
     text-align: center;
     font-weight: 300;
-    padding: 12px 24px;
-    color: rgba(16, 16, 16, 0.7);
+    padding: 15px 30px;
 }
 
 #container a {
     text-decoration: none;
     color: rgba(16, 16, 16, 1);
     border-bottom: 1px solid rgba(16, 16, 16, 0.15);
-    padding-bottom: 2px;
+    padding-bottom: 1px;
+    transition: all 0.25s;
 }
 
 #container a:hover, #container a:active {
     border: 0;
+    border-bottom: 1px solid rgba(16, 16, 16, 0.45);
+    transition: all 0.25s;
 }
 
 #container .networks {
     width: 100%;
     text-align: center;
-    padding-top: 12px;
 }
 
 #container .networks a {
     font-size: 1.250em;
     border: 0;
     color: rgba(16, 16, 16, 0.5);
+    display: inline-block;
 }
 
 #container .networks a:hover {
@@ -198,7 +215,7 @@ body {
     speak: none;
     display: inline-block;
     text-decoration: inherit;
-    padding: 12px;
+    padding: 12px 18px;
     text-align: center;
     font-variant: normal;
     text-transform: none;
@@ -225,7 +242,10 @@ body {
         width: 80px;
         height: 80px;
     }
-    #container h1, #container p {
+    #container h1 {
+        font-size: 1.125em;
+    }
+    #container p {
         font-size: 0.813em;
     }
 }
@@ -234,9 +254,6 @@ body {
     #container .profile-picture .img {
         width: 100px;
         height: 100px;
-    }
-    #container h1, #container p {
-        font-size: 1em;
     }
     #container p {
         max-width: none;
@@ -247,7 +264,7 @@ body {
 }
 
 @media screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-    #container h1, #container p {
+    #container p {
         font-size: 0.813em;
     }
 }
