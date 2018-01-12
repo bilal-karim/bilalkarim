@@ -137,7 +137,7 @@ body {
     width: 100%;
     text-align: center;
     font-weight: 700;
-    font-size: 1.375em;
+    font-size: 1.250em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -163,18 +163,17 @@ body {
 
 #container p {
     font-size: 1.125em;
-    max-width: 580px;
+    max-width: 640px;
     margin: 0 auto;
     text-align: center;
     font-weight: 300;
-    padding: 15px 30px;
+    padding: 14px 28px;
 }
 
 #container a {
     text-decoration: none;
     color: rgba(16, 16, 16, 1);
     border-bottom: 1px solid rgba(16, 16, 16, 0.15);
-    padding-bottom: 1px;
     transition: all 0.25s;
 }
 
@@ -243,9 +242,9 @@ body {
         height: 80px;
     }
     #container h1 {
-        font-size: 1.125em;
+        font-size: 1em;
     }
-    #container p {
+    #container p, #container h2 {
         font-size: 0.813em;
     }
 }
