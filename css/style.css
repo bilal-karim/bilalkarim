@@ -55,6 +55,10 @@ body {
     padding: 10px;
 }
 
+strong {
+    font-weight: 500;
+}
+
 .gr-1 {
     background: #6f86d6;
     background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
@@ -126,8 +130,8 @@ body {
 #container .profile-picture .img {
     background: #AAA url('../img/bilal-karim.png');
     background-size: contain;
-    width: 128px;
-    height: 128px;
+    width: 80px;
+    height: 80px;
     border-radius: 128px;
     display: inline-block;
     border: 2px solid rgba(0, 0, 0, 0.1);
@@ -137,18 +141,10 @@ body {
     width: 100%;
     text-align: center;
     font-weight: 700;
-    font-size: 1.250em;
+    font-size: 1.125em;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-/*#container h1 sup {
-    text-transform: capitalize;
-    font-weight: 400;
-    letter-spacing: 0;
-    color: rgba(16, 16, 16, 0.5);
-    font-size: 0.750em;
-}*/
 
 #container h2 {
     font-size: 0.875em;
@@ -167,19 +163,25 @@ body {
     margin: 0 auto;
     text-align: center;
     font-weight: 300;
-    padding: 14px 28px;
+    padding: 16px 32px 8px 32px;
+}
+
+#container p:nth-of-type(2), #container p:nth-of-type(3) {
+    padding: 4px 0;
+    font-size: 0.813em;
 }
 
 #container a {
     text-decoration: none;
     color: rgba(16, 16, 16, 1);
-    border-bottom: 1px solid rgba(16, 16, 16, 0.15);
+    border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+    padding-bottom: 2px;
     transition: all 0.25s;
 }
 
 #container a:hover, #container a:active {
     border: 0;
-    border-bottom: 1px solid rgba(16, 16, 16, 0.45);
+    border-bottom: 1px solid rgba(16, 16, 16, 0.4);
     transition: all 0.25s;
 }
 
@@ -214,7 +216,7 @@ body {
     speak: none;
     display: inline-block;
     text-decoration: inherit;
-    padding: 12px 18px;
+    padding: 16px 22px;
     text-align: center;
     font-variant: normal;
     text-transform: none;
@@ -237,28 +239,24 @@ body {
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 568px) {
-    #container .profile-picture .img {
-        width: 80px;
-        height: 80px;
-    }
     #container h1 {
         font-size: 1em;
     }
-    #container p, #container h2 {
-        font-size: 0.813em;
+    #container p {
+        font-size: 0.875em;
+        padding: 8px 0;
+    }
+    #container p:nth-of-type(2), #container p:nth-of-type(3) {
+        font-size: 0.750em;
+    }
+    #container {
+        padding: 30px;
     }
 }
 
 @media screen and (min-device-width: 375px) and (max-device-width: 736px) {
-    #container .profile-picture .img {
-        width: 100px;
-        height: 100px;
-    }
     #container p {
         max-width: none;
-    }
-    #container .networks {
-        padding: 0;
     }
 }
 
