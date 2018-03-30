@@ -298,6 +298,7 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(240, 152, 25, 0.2);
     z-index: -1;
     border-radius: 20px;
+    animation: swivel 30s 2s infinite;
 }
 
 #work .orange-text-shadow {
@@ -329,6 +330,7 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(55, 94, 120, 0.2);
     z-index: -1;
     border-radius: 20px;
+    animation: swivel-reverse 30s 2s infinite;
 }
 
 #work .grey-text-shadow {
@@ -360,6 +362,7 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(0, 205, 172, 0.2);
     z-index: -1;
     border-radius: 20px;
+    animation: swivel 30s 2s infinite;
 }
 
 #work .teal-text-shadow {
@@ -391,6 +394,7 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(80, 204, 96, 0.2);
     z-index: -1;
     border-radius: 20px;
+    animation: swivel-reverse 30s 2s infinite;
 }
 
 #work .green-text-shadow {
@@ -422,6 +426,7 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(148, 113, 107, 0.2);
     z-index: -1;
     border-radius: 20px;
+    animation: swivel 30s 2s infinite;
 }
 
 #work .copper-text-shadow {
@@ -453,6 +458,7 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(4, 190, 254, 0.2);
     z-index: -1;
     border-radius: 20px;
+    animation: swivel-reverse 30s 2s infinite;
 }
 
 #work .blue-text-shadow {
@@ -531,6 +537,54 @@ footer a:hover {
 }
 
 /* ANIMATION */
+
+/* @-webkit-keyframes swivel {
+    0% {
+        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+    }
+    50% {
+        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+    }
+    100% {
+        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+    }
+}
+
+@keyframes swivel {
+    0% {
+        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+    }
+    50% {
+        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+    }
+    100% {
+        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+    }
+}
+
+@-webkit-keyframes swivel-reverse {
+    0% {
+        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+    }
+    50% {
+        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+    }
+    100% {
+        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+    }
+}
+
+@keyframes swivel-reverse {
+    0% {
+        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+    }
+    50% {
+        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+    }
+    100% {
+        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+    }
+} */
 
 /* .animated {
     animation-duration: 0.7s;
