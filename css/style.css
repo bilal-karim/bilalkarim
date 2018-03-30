@@ -75,7 +75,6 @@ html, body {
     color: rgba(16, 16, 16, 0.9);
     -webkit-font-rendering: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* height: 100%; */
     background: #fbfbfb;
 }
 
@@ -88,12 +87,7 @@ strong {
 }
 
 .wrapper {
-    max-width: 768px;
-    margin: 0 auto;
-}
-
-.wrapper.fix {
-    max-width: 750px;
+    max-width: 740px;
     margin: 0 auto;
 }
 
@@ -141,7 +135,7 @@ header {
 }
 
 .logo {
-    padding: 12px;
+    padding: 12px 0;
 }
 
 .logo img {
@@ -172,6 +166,10 @@ nav a {
     transition: color 0.3s;
 }
 
+nav a:last-child {
+    padding-right: 0;
+}
+
 nav a:hover {
     color: rgba(16, 16, 16, 0.5);
     transition: color 0.3s;
@@ -180,7 +178,7 @@ nav a:hover {
 /* HERO */
 
 .hero {
-    padding: 3em 2em;
+    margin: 3em 2em;
 }
 
 .hero h1 {
@@ -191,7 +189,7 @@ nav a:hover {
 }
 
 .hero h2 {
-    padding: 10px 0 0 0;
+    padding: 12px 0 0 0;
     color: rgba(16, 16, 16, 0.5);
     width: 100%;
 }
@@ -470,13 +468,10 @@ nav a:hover {
 
 /* ARTICLES */
 
-#thoughts {
-    padding: 3em;
-}
-
 #thoughts ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
+    padding: 3em 0;
 }
 
 #thoughts ol li a {
@@ -581,4 +576,22 @@ footer a:hover {
 
 .icon-instagram:before {
     content: '\F2FE';
+}
+
+@media screen and (max-width: 48em) {
+    #work.wrapper, #about.wrapper {
+        padding: 2em;
+    }
+    #thoughts ol {
+        padding: 2em 2em 3em 2em;
+    }
+    .section {
+        margin: 0 2em 1em 2em;
+    }
+    .block:first-of-type {
+        margin-top: 0;
+    }
+    .block:last-of-type {
+        margin-bottom: 1em;
+    }
 }
