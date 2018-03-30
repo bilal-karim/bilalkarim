@@ -140,18 +140,23 @@ header {
     background: #fff;
 }
 
-.name {
+.logo {
     padding: 12px;
 }
 
-.name h1 {
+.logo img {
+    height: 28px;
+    margin-right: 12px;
+}
+
+.logo h1 {
     font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
 }
 
-.name h2 {
+.logo h2 {
     color: rgba(16, 16, 16, 0.5);
     font-size: 0.688em;
 }
