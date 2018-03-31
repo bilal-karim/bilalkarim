@@ -161,7 +161,7 @@ header a {
 }
 
 .logo h2 {
-    color: rgba(16, 16, 16, 0.5);
+    color: rgba(16, 16, 16, 0.6);
     font-size: 0.688em;
 }
 
@@ -171,7 +171,7 @@ header a {
 }
 
 .logo h2:hover:after {
-    content: "hi, it’s nice to meet you.";
+    content: "hi, it’s nice to meet you!";
 }
 
 nav {
@@ -192,7 +192,7 @@ nav a:last-child {
 }
 
 nav a:hover {
-    color: rgba(16, 16, 16, 0.5);
+    color: rgba(16, 16, 16, 0.6);
     transition: color 0.3s;
 }
 
@@ -220,9 +220,11 @@ button {
 
 .hero h2 {
     padding: 12px 0 0 0;
-    color: rgba(16, 16, 16, 0.5);
+    color: rgba(16, 16, 16, 0.6);
     width: 100%;
 }
+
+/* SECTIONS */
 
 .section .line {
     height: 2px;
@@ -232,11 +234,33 @@ button {
     position: relative;
 }
 
+.section p {
+    line-height: 1.5;
+    padding: 1.5em 0 3em 0;
+    color: rgba(16, 16, 16, 0.6);
+}
+
+.section .unit {
+    padding: 0 1.5em;
+}
+
+.section .half {
+    width: 50%;
+}
+
+.section .unit:first-of-type {
+    padding-left: 0;
+}
+
+.section .unit:last-of-type {
+    padding-right: 0;
+}
+
 .section h1 {
     background: #fbfbfb;
     padding: 4px 8px;
     display: inline-block;
-    position: absolute;
+    position: relative;
     left: 10px;
 }
 
@@ -246,6 +270,10 @@ button {
     -webkit-flex: 1;
     flex: 1;
     padding: 4em 2em;
+}
+
+#work .title.minify {
+    padding: 2em;
 }
 
 #work h1 {
@@ -269,7 +297,7 @@ button {
     text-transform: uppercase;
     font-size: 0.750em;
     color: inherit;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
     transition: box-shadow 0.3s;
 }
 
@@ -509,6 +537,7 @@ button {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
     padding: 3em 0;
+    color: rgba(16, 16, 16, 0.6);
 }
 
 #thoughts ol li a {
@@ -516,12 +545,13 @@ button {
     padding-bottom: 3px;
     display: inline-block;
     color: inherit;
-    transition: border 0.3s;
+    transition: border 0.3s, color 0.3s;
 }
 
 #thoughts ol li a:hover {
     border-bottom: 1px solid rgba(16, 16, 16, 0.9);
-    transition: border 0.3s;
+    transition: border 0.3s, color 0.3s;
+    color: rgba(16, 16, 16, 0.9);
 }
 
 #thoughts ol li:last-child {
@@ -539,6 +569,7 @@ button {
 #about .profile-summary {
     line-height: 1.5;
     margin-left: 2em;
+    color: rgba(16, 16, 16, 0.6);
 }
 
 /* FOOTER */
