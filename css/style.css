@@ -134,13 +134,25 @@ header {
     background: #fff;
 }
 
+header a {
+    color: inherit;
+}
+
 .logo {
     padding: 12px 0;
 }
 
-.logo img {
+.logo:before {
+    content: '';
+    background: url('../img/emoji.svg') no-repeat;
     height: 28px;
-    margin-right: 12px;
+    width: 28px;
+    margin-right: 10px;
+    background-position: -28px 0;
+}
+
+.logo:hover:before {
+    background-position: 0 0;
 }
 
 .logo h1 {
@@ -151,6 +163,15 @@ header {
 .logo h2 {
     color: rgba(16, 16, 16, 0.5);
     font-size: 0.688em;
+}
+
+.logo h2:after {
+    content: 'designer. developer. maker.';
+    padding: 16px 0 0 0;
+}
+
+.logo h2:hover:after {
+    content: "hi, it’s nice to meet you.";
 }
 
 nav {
@@ -728,6 +749,9 @@ footer a:hover {
     }
     .logo {
         padding: 18px 18px 12px 18px;
+    }
+    .site {
+        width: 100%;
     }
     nav {
         font-size: 0.688em;
