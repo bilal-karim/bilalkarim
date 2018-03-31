@@ -8,12 +8,13 @@
 <meta name="google-site-verification" content="kfgCIKi_3OOGSEwJZPRX_MVAOAk1Yl-Ri63pAv9rqek">
 <meta name="theme-color" content="#101010">
 <title>Bilal Karim &ndash; Designer &bull; Developer &bull; Maker</title>
-<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/style.min.css" type="text/css">
+<link rel="icon" href="favicon.ico">
 </head>
 <body>
 <header>
     <div class="flex space-between align-vertically wrapper mobile-wrap">
-        <a class="site" href="#">
+        <a href="#">
             <div class="logo flex wrap align-vertically mobile-center animated fadeInDown">
                 <div class="name">
                     <h1><strong>Bilal Karim</strong></h1>
@@ -21,7 +22,10 @@
                 </div>
             </div>
         </a>
-        <nav class="animated fadeInDown">
+        <div class="mobile-menu animated fadeInDown">
+            <button class="mdi mdi-menu"></button>
+        </div>
+        <nav class="animated fadeInDown hide-on-mobile">
             <a href="#">Work</a>
             <a href="#">Thoughts</a>
             <a href="#">About</a>
@@ -161,6 +165,7 @@
         </div>
     </div>
 </footer>
+<script src="js/site.min.js"></script>
 <!-- <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
