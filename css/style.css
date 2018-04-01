@@ -257,24 +257,8 @@ button {
     padding: 1.5em;
     margin: 0 1em;
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    /* background: #fff; */
-    position: relative;
-    z-index: 1;
-}
-
-.section .third .bg {
-    /* background: rgba(0, 0, 0, 0.2); */
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    transform: skew(-5deg, -5deg) scale(1.1) rotateX(-35deg);
-    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); */
-    z-index: -2;
-    border-radius: 20px;
+    /* border: 1px solid rgba(0, 0, 0, 0.05); */
+    background: #fff;
 }
 
 .section .third:first-of-type {
@@ -299,7 +283,7 @@ button {
 }
 
 .section .areas {
-    padding: 1.5em 0 3em 0;
+    padding: 1.5em 0 0em 0;
 }
 
 .section h1 {
@@ -313,6 +297,7 @@ button {
 .section h2 {
     font-size: 0.875em;
     padding: 0 0 0.5em 0;
+    text-transform: uppercase;
 }
 
 .section ul {
@@ -323,9 +308,19 @@ button {
     list-style-position: inside;
 }
 
-.section .feature-image img {
+.section ul li:before {
+    content: '\F12C';
+    margin-right: 6px;
+    color: rgba(16, 16, 16, 0.3);
+}
+
+.section .feature-image {
     width: 100%;
+    height: 400px;
+    background: #fff;
     margin: 1.5em 0 3em 0;
+    /* border: 1px solid rgba(0, 0, 0, 0.05); */
+    border-radius: 20px;
 }
 
 /* SELECTED WORK */
@@ -432,7 +427,7 @@ button {
 }
 
 .orange-text-color {
-    color: #f09819;
+    color: #f09819 !important;
 }
 
 /* VISUALOG */
@@ -464,7 +459,7 @@ button {
 }
 
 .grey-text-color {
-    color: #375e78;
+    color: #375e78 !important;
 }
 
 /* MONEY AFTER GRADUATION */
@@ -496,7 +491,7 @@ button {
 }
 
 .teal-text-color {
-    color: #189dad;
+    color: #189dad !important;
 }
 
 /* SPORTSITY */
@@ -528,7 +523,7 @@ button {
 }
 
 .green-text-color {
-    color: #009c2d;
+    color: #009c2d !important;
 }
 
 /* H WEDS A */
@@ -560,7 +555,7 @@ button {
 }
 
 .copper-text-color {
-    color: #7a5c57;
+    color: #7a5c57 !important;
 }
 
 /* FLYVU */
@@ -592,7 +587,7 @@ button {
 }
 
 .blue-text-color {
-    color: #2ba0f4;
+    color: #2ba0f4 !important;
 }
 
 /* ARTICLES */
@@ -606,11 +601,15 @@ button {
 
 .section ol {
     padding: 1.5em 0 0 0;
-    list-style-type: upper-roman;
 }
 
 .section ol li {
     line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+.section ol li:last-child {
+    margin: 0;
 }
 
 #thoughts ol li {
@@ -621,13 +620,14 @@ button {
     border-bottom: 1px solid rgba(16, 16, 16, 0.05);
     display: inline-block;
     color: inherit;
-    transition: border 0.3s, color 0.3s;
+    transition: color 0.3s, background 0.3s;
 }
 
 #thoughts ol li a:hover {
-    border-bottom: 1px solid rgba(16, 16, 16, 0.9);
-    transition: border 0.3s, color 0.3s;
-    color: rgba(16, 16, 16, 0.9);
+    background: rgba(16, 16, 16, 0.9);
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, background 0.3s;
+    color: #fff;
 }
 
 #thoughts ol li:last-child {
@@ -795,6 +795,10 @@ footer a:hover {
 
 .mdi {
     margin: 0 0 0 6px;
+}
+
+.check {
+    margin: 0;
 }
 
 @font-face {
