@@ -386,7 +386,7 @@ button {
 }
 
 #continue h1 {
-    font-size: 1.5em;
+    font-size: 1.125em;
 }
 
 #work p, #continue p {
@@ -947,6 +947,15 @@ footer a:hover {
 button.mdi {
     margin: 0 !important;
 }
+
+/* MISC */
+
+/* *::selection {
+    background: #000;
+    color: #fff;
+} */
+
+/* RESPONSIVE MEDIA QUERIES */
 
 @media screen and (max-width: 48em) {
     #work.wrapper, #about.wrapper, #continue {
