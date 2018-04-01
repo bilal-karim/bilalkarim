@@ -106,6 +106,23 @@ strong {
     padding-bottom: 0 !important;
 }
 
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-top-margin {
+    margin-top: 0 !important;
+}
+
+.no-margins {
+    margin: 0 !important;
+}
+
+.flex-1 {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
 .reverse {
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
@@ -129,6 +146,10 @@ strong {
 .space-between {
     -webkit-justify-content: space-between;
     justify-content: space-between;
+}
+
+.caption {
+    font-size: 0.875em;
 }
 
 /* HEADER */
@@ -252,13 +273,32 @@ button {
     width: 50%;
 }
 
+.section .add-padding {
+    padding: 1.5em 0 0 0;
+}
+
+.section .add-padding:last-of-type {
+    padding-bottom: 3em;
+}
+
 .section .third {
     width: 33.3332%;
     padding: 1.5em;
     margin: 0 1em;
     border-radius: 20px;
-    /* border: 1px solid rgba(0, 0, 0, 0.05); */
     background: #fff;
+}
+
+.section .transparent {
+    background: transparent;
+    padding: 0;
+}
+
+.section .circle {
+    height: 64px;
+    width: 64px;
+    border-radius: 86px;
+    margin-right: 1em;
 }
 
 .section .third:first-of-type {
@@ -283,7 +323,7 @@ button {
 }
 
 .section .areas {
-    padding: 1.5em 0 0em 0;
+    padding: 1.5em 0 0 0;
 }
 
 .section h1 {
@@ -316,10 +356,9 @@ button {
 
 .section .feature-image {
     width: 100%;
-    height: 400px;
+    height: 200px;
     background: #fff;
     margin: 1.5em 0 3em 0;
-    /* border: 1px solid rgba(0, 0, 0, 0.05); */
     border-radius: 20px;
 }
 
@@ -355,7 +394,6 @@ button {
     background: #fff;
     text-transform: uppercase;
     font-size: 0.750em;
-    color: inherit;
     margin: 10px 0 0 0;
     transition: box-shadow 0.3s;
 }
@@ -401,8 +439,8 @@ button {
 
 /* MYHEAT */
 
-#work .block.orange {
-    background-image: linear-gradient(to right, #f09819 0%, #ff7158 100%);
+.orange-grd {
+    background: linear-gradient(to right, #f09819 0%, #ff7158 100%);
 }
 
 #work .block .light-orange {
@@ -418,11 +456,11 @@ button {
     animation: swivel 30s 2s infinite;
 }
 
-#work .orange-text-shadow {
+.orange-text-shadow {
     text-shadow: 0 1px 3px rgba(217, 101, 8, 1);
 }
 
-#work .orange-box-shadow {
+.orange-box-shadow {
     box-shadow: 0 2px 10px rgba(217, 101, 8, 0.7);
 }
 
@@ -432,8 +470,8 @@ button {
 
 /* VISUALOG */
 
-#work .block.grey {
-    background-image: linear-gradient(to right, #375e78 0%, #1C2A3C 100%);
+.grey-grd {
+    background: linear-gradient(to right, #375e78 0%, #1C2A3C 100%);
     /* box-shadow: -10px 10px 0 rgba(55, 94, 120, 0.2); */
 }
 
@@ -450,22 +488,22 @@ button {
     animation: swivel-reverse 30s 2s infinite;
 }
 
-#work .grey-text-shadow {
+.grey-text-shadow {
     text-shadow: 0 1px 3px rgba(28, 42, 60, 1);
 }
 
-#work .grey-box-shadow {
+.grey-box-shadow {
     box-shadow: 0 2px 10px rgba(28, 42, 60, 0.7);
 }
 
 .grey-text-color {
-    color: #375e78 !important;
+    color: #375e78;
 }
 
 /* MONEY AFTER GRADUATION */
 
-#work .block.teal {
-    background-image: linear-gradient(to right, #189dad 0%, #00cdac 100%);
+.teal-grd {
+    background: linear-gradient(to right, #189dad 0%, #00cdac 100%);
     /* box-shadow: 10px 10px 0 rgba(0, 205, 172, 0.2); */
 }
 
@@ -482,22 +520,22 @@ button {
     animation: swivel 30s 2s infinite;
 }
 
-#work .teal-text-shadow {
+.teal-text-shadow {
     text-shadow: 0 1px 3px rgba(10, 110, 122, 0.7);
 }
 
-#work .teal-box-shadow {
+.teal-box-shadow {
     box-shadow: 0 2px 10px rgba(10, 110, 122, 0.7);
 }
 
 .teal-text-color {
-    color: #189dad !important;
+    color: #189dad;
 }
 
 /* SPORTSITY */
 
-#work .block.green {
-    background-image: linear-gradient(to right, #50cc60 0%, #009c2d 100%);
+.green-grd {
+    background: linear-gradient(to right, #50cc60 0%, #009c2d 100%);
     /* box-shadow: -10px 10px 0 rgba(80, 204, 96, 0.2); */
 }
 
@@ -514,21 +552,21 @@ button {
     animation: swivel-reverse 30s 2s infinite;
 }
 
-#work .green-text-shadow {
+.green-text-shadow {
     text-shadow: 0 1px 3px rgba(0, 156, 45, 1);
 }
 
-#work .green-box-shadow {
+.green-box-shadow {
     box-shadow: 0 2px 10px rgba(0, 156, 45, 0.7);
 }
 
 .green-text-color {
-    color: #009c2d !important;
+    color: #009c2d;
 }
 
 /* H WEDS A */
 
-#work .block.copper {
+.copper-grd {
     background: linear-gradient(to right, #94716B 0%, #B79891 100%);
     /* box-shadow: 10px 10px 0 rgba(148, 113, 107, 0.2); */
 }
@@ -546,22 +584,22 @@ button {
     animation: swivel 30s 2s infinite;
 }
 
-#work .copper-text-shadow {
+.copper-text-shadow {
     text-shadow: 0 1px 3px rgba(108, 82, 77, 1);
 }
 
-#work .copper-box-shadow {
+.copper-box-shadow {
     box-shadow: 0 2px 10px rgba(108, 82, 77, 0.7);
 }
 
 .copper-text-color {
-    color: #7a5c57 !important;
+    color: #7a5c57;
 }
 
 /* FLYVU */
 
-#work .block.blue {
-    background-image: linear-gradient(to right, #04befe 0%, #4481eb 100%);
+.blue-grd {
+    background: linear-gradient(to right, #04befe 0%, #4481eb 100%);
     /* box-shadow: -10px 10px 0 rgba(4, 190, 254, 0.2); */
 }
 
@@ -578,16 +616,16 @@ button {
     animation: swivel-reverse 30s 2s infinite;
 }
 
-#work .blue-text-shadow {
+.blue-text-shadow {
     text-shadow: 0 1px 3px #0487b4;
 }
 
-#work .blue-box-shadow {
+.blue-box-shadow {
     box-shadow: 0 2px 10px rgba(4, 135, 180, 0.7);
 }
 
 .blue-text-color {
-    color: #2ba0f4 !important;
+    color: #2ba0f4;
 }
 
 /* ARTICLES */
@@ -601,6 +639,7 @@ button {
 
 .section ol {
     padding: 1.5em 0 0 0;
+    list-style-type: none;
 }
 
 .section ol li {
@@ -797,6 +836,11 @@ footer a:hover {
     margin: 0 0 0 6px;
 }
 
+.mdi-32 {
+    font-size: 32px;
+    color: #fff;
+}
+
 .check {
     margin: 0;
 }
@@ -866,6 +910,17 @@ footer a:hover {
 
 .mdi-invert-colors:before {
     content: "\F301";
+}
+
+.mdi-human-greeting:before {
+    content: "\F64A";
+}
+
+.mdi-share-variant:before {
+    content: "\F497";
+}
+.mdi-margin:before {
+    content: "\F353";
 }
 
 button.mdi {
@@ -967,5 +1022,22 @@ button.mdi {
     .reverse-on-mobile {
         -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
+    }
+    .section .unit {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section .half, .section .third {
+        width: 100%;
+    }
+    .section .third {
+        margin: 1em 0;
+    }
+    .section .third:first-of-type {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .section .third:last-of-type {
+        margin-bottom: 0;
     }
 }
