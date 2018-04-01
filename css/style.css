@@ -114,6 +114,10 @@ strong {
     margin-top: 0 !important;
 }
 
+.no-bottom-margin {
+    margin-bottom: 0 !important;
+}
+
 .no-margins {
     margin: 0 !important;
 }
@@ -370,24 +374,28 @@ button {
     padding: 4em 2em;
 }
 
-#work .title.minify {
+#work .title.minify, #continue .title.minify {
     padding: 2em;
 }
 
-#work h1 {
+#work h1, #continue h1 {
     font-size: 1.750em;
     font-weight: 500;
     padding-bottom: 6px;
     color: #fff;
 }
 
-#work p {
+#continue h1 {
+    font-size: 1.5em;
+}
+
+#work p, #continue p {
     line-height: 1.5;
     font-size: 0.875em;
     color: rgba(255, 255, 255, 1);
 }
 
-#work a, .label {
+#work a, .label, #continue a {
     display: inline-block;
     padding: 10px 14px;
     border-radius: 20px;
@@ -398,7 +406,7 @@ button {
     transition: box-shadow 0.3s;
 }
 
-#work a:after {
+#work a:after, #continue a:after {
     content: "\F054";
     font-weight: 400;
     font-family: 'Material Design Icons';
@@ -406,12 +414,12 @@ button {
     transition: margin 0.2s;
 }
 
-#work a:hover:after {
+#work a:hover:after, #continue a:hover:after {
     margin-left: 18px;
     transition: margin 0.2s;
 }
 
-#work a:active {
+#work a:active, #continue a:active {
     box-shadow: none;
     transition: box-shadow 0.3s;
 }
@@ -422,11 +430,24 @@ button {
     padding: 4em 2em;
 }
 
-.block {
+.block, .block.third {
     border-radius: 20px;
     margin: 3em 0;
     position: relative;
     z-index: 1;
+}
+
+.block.third {
+    width: 33.3332%;
+    margin: 3em 1.25em;
+}
+
+.block.third:first-of-type {
+    margin-left: 0;
+}
+
+.block.third:last-of-type {
+    margin-right: 0;
 }
 
 /* .block:first-of-type {
@@ -443,7 +464,7 @@ button {
     background: linear-gradient(to right, #f09819 0%, #ff7158 100%);
 }
 
-#work .block .light-orange {
+#work .block .light-orange, #continue .block .light-orange {
     background: rgba(240, 152, 25, 0.2);
     height: 100%;
     width: 100%;
@@ -475,7 +496,7 @@ button {
     /* box-shadow: -10px 10px 0 rgba(55, 94, 120, 0.2); */
 }
 
-#work .block .light-grey {
+#work .block .light-grey, #continue .block .light-grey {
     background: rgba(55, 94, 120, 0.2);
     height: 100%;
     width: 100%;
@@ -507,7 +528,7 @@ button {
     /* box-shadow: 10px 10px 0 rgba(0, 205, 172, 0.2); */
 }
 
-#work .block .light-teal {
+#work .block .light-teal, #continue .block .light-teal {
     background: rgba(0, 205, 172, 0.2);
     height: 100%;
     width: 100%;
@@ -539,7 +560,7 @@ button {
     /* box-shadow: -10px 10px 0 rgba(80, 204, 96, 0.2); */
 }
 
-#work .block .light-green {
+#work .block .light-green, #continue .block .light-green {
     background: rgba(80, 204, 96, 0.2);
     height: 100%;
     width: 100%;
@@ -571,7 +592,7 @@ button {
     /* box-shadow: 10px 10px 0 rgba(148, 113, 107, 0.2); */
 }
 
-#work .block .light-copper {
+#work .block .light-copper, #continue .block .light-copper {
     background: rgba(148, 113, 107, 0.2);
     height: 100%;
     width: 100%;
@@ -928,13 +949,13 @@ button.mdi {
 }
 
 @media screen and (max-width: 48em) {
-    #work.wrapper, #about.wrapper {
+    #work.wrapper, #about.wrapper, #continue {
         padding: 2em;
     }
     #thoughts ol {
         padding: 2em 2em 3em 2em;
     }
-    .section {
+    .section  {
         margin: 0 2em 1em 2em;
     }
     .block:first-of-type {
@@ -1027,8 +1048,19 @@ button.mdi {
         padding-left: 0;
         padding-right: 0;
     }
-    .section .half, .section .third {
+    .section .half, .section .third, .block.third {
         width: 100%;
+    }
+    .block.third {
+        margin: 3em 0;
+    }
+    .block.third:first-of-type {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .block.third:last-of-type {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .section .third {
         margin: 1em 0;
