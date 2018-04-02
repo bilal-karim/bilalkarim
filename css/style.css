@@ -200,7 +200,7 @@ header a {
 }
 
 .logo h2:hover:after {
-    content: "hi, it’s nice to meet you!";
+    content: "hi, nice to meet you!";
 }
 
 nav {
@@ -303,6 +303,13 @@ button {
     width: 64px;
     border-radius: 86px;
     margin-right: 1em;
+}
+
+.section .circle .inner {
+    background: #fbfbfb;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
 }
 
 .section .third:first-of-type {
@@ -450,14 +457,6 @@ button {
     margin-right: 0;
 }
 
-/* .block:first-of-type {
-    margin-top: 3em;
-}
-
-.block:last-of-type {
-    margin-bottom: 3em;
-} */
-
 /* MYHEAT */
 
 .orange-grd {
@@ -487,6 +486,16 @@ button {
 
 .orange-text-color {
     color: #f09819 !important;
+}
+
+.orange-grd-text {
+    color: #f09819;
+    background: -webkit-linear-gradient(#f09819, #ff7158);
+    background: linear-gradient(to right, #f09819 0%, #ff7158 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
 /* VISUALOG */
@@ -859,7 +868,16 @@ footer a:hover {
 
 .mdi-32 {
     font-size: 32px;
-    color: #fff;
+}
+
+.mdi.orange:before {
+    color: #f09819;
+    background: -webkit-linear-gradient(#f09819, #ff7158);
+    background: linear-gradient(to right, #f09819 0%, #ff7158 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
 .check {
