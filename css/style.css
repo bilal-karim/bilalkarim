@@ -299,18 +299,18 @@ button {
 }
 
 .section .circle {
-    height: 64px;
-    width: 64px;
-    border-radius: 86px;
+    /* height: 52px; */
+    /* width: 52px; */
+    /* border-radius: 52px; */
     margin-right: 1em;
 }
 
-.section .circle .inner {
+/* .section .circle .inner {
     background: #fbfbfb;
-    height: 60px;
-    width: 60px;
-    border-radius: 60px;
-}
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+} */
 
 .section .third:first-of-type {
     margin-left: 0;
@@ -955,9 +955,10 @@ footer a:hover {
     content: "\F64A";
 }
 
-.mdi-share-variant:before {
-    content: "\F497";
+.mdi-thumb-up:before {
+    content: "\F513";
 }
+
 .mdi-margin:before {
     content: "\F353";
 }
