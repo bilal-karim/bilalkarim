@@ -977,7 +977,7 @@ button.mdi {
 /* RESPONSIVE MEDIA QUERIES */
 
 @media screen and (max-width: 48em) {
-    #work.wrapper, #about.wrapper, #continue {
+    #work.wrapper, #about.wrapper {
         padding: 2em;
     }
     #thoughts ol {
@@ -1072,32 +1072,24 @@ button.mdi {
         -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
+    #continue {
+        overflow-x: auto;
+    }
+    #continue .add-side-padding-on-mobile {
+        padding: 0 2em;
+    }
     .section .unit {
         padding-left: 0;
         padding-right: 0;
     }
-    .section .half, .section .third, .block.third {
+    .section .half, .section .third {
         width: 100%;
     }
     .block.third {
-        margin: 3em 0;
-    }
-    .block.third:first-of-type {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-    .block.third:last-of-type {
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 1.5em 1.25em 2em 1.25em;
+        min-width: 220px;
     }
     .section .third {
-        margin: 1em 0;
-    }
-    .section .third:first-of-type {
-        margin-right: 0;
-        margin-top: 0;
-    }
-    .section .third:last-of-type {
-        margin-bottom: 0;
+        margin: 0.5em 0;
     }
 }
