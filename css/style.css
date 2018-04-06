@@ -106,6 +106,10 @@ strong {
     padding-bottom: 0 !important;
 }
 
+.no-top-padding {
+    padding-top: 0 !important;
+}
+
 .no-padding {
     padding: 0 !important;
 }
@@ -269,14 +273,6 @@ button {
     color: rgba(16, 16, 16, 0.6);
 }
 
-.section .unit {
-    padding: 0 1.5em;
-}
-
-.section .half {
-    width: 50%;
-}
-
 .section .add-padding {
     padding: 1.5em 0 0 0;
 }
@@ -285,17 +281,29 @@ button {
     padding-bottom: 3em;
 }
 
+.section .unit {
+    padding: 0 1.5em;
+}
+
+.section .full {
+    width: 100%;
+}
+
+.section .half {
+    width: 50%;
+}
+
 .section .third {
     width: 33.3332%;
     padding: 1.5em;
-    margin: 0 1em;
+    margin: 1.5em;
     border-radius: 20px;
     background: #fff;
 }
 
 .section .transparent {
-    background: transparent;
-    padding: 0;
+    /* background: transparent; */
+    padding: 1em;
 }
 
 .section .circle {
@@ -333,10 +341,6 @@ button {
     padding-right: 0;
 }
 
-.section .areas {
-    padding: 1.5em 0 0 0;
-}
-
 .section h1 {
     background: #fbfbfb;
     padding: 4px 8px;
@@ -369,7 +373,7 @@ button {
     width: 100%;
     height: 200px;
     background: #fff;
-    margin: 1.5em 0 3em 0;
+    margin: 0 0 3em 0;
     border-radius: 20px;
 }
 
@@ -381,28 +385,28 @@ button {
     padding: 4em 2em;
 }
 
-#work .title.minify, #continue .title.minify {
+#work .title.minify, .continue .title.minify {
     padding: 2em;
 }
 
-#work h1, #continue h1 {
+#work h1, .continue h1 {
     font-size: 1.750em;
     font-weight: 500;
     padding-bottom: 6px;
     color: #fff;
 }
 
-#continue h1 {
+.continue h1 {
     font-size: 1.125em;
 }
 
-#work p, #continue p {
+#work p, .continue p {
     line-height: 1.5;
     font-size: 0.875em;
     color: rgba(255, 255, 255, 1);
 }
 
-#work a, .label, #continue a {
+#work a, .label, .continue a {
     display: inline-block;
     padding: 10px 14px;
     border-radius: 20px;
@@ -413,7 +417,7 @@ button {
     transition: box-shadow 0.3s;
 }
 
-#work a:after, #continue a:after {
+#work a:after, .continue a:after {
     content: "\F054";
     font-weight: 400;
     font-family: 'Material Design Icons';
@@ -421,12 +425,12 @@ button {
     transition: margin 0.2s;
 }
 
-#work a:hover:after, #continue a:hover:after {
+#work a:hover:after, .continue a:hover:after {
     margin-left: 18px;
     transition: margin 0.2s;
 }
 
-#work a:active, #continue a:active {
+#work a:active, .continue a:active {
     box-shadow: none;
     transition: box-shadow 0.3s;
 }
@@ -463,7 +467,7 @@ button {
     background: linear-gradient(to right, #f09819 0%, #ff7158 100%);
 }
 
-#work .block .light-orange, #continue .block .light-orange {
+#work .block .light-orange, .continue .block .light-orange {
     background: rgba(240, 152, 25, 0.2);
     height: 100%;
     width: 100%;
@@ -505,7 +509,7 @@ button {
     /* box-shadow: -10px 10px 0 rgba(55, 94, 120, 0.2); */
 }
 
-#work .block .light-grey, #continue .block .light-grey {
+#work .block .light-grey, .continue .block .light-grey {
     background: rgba(55, 94, 120, 0.2);
     height: 100%;
     width: 100%;
@@ -537,7 +541,7 @@ button {
     /* box-shadow: 10px 10px 0 rgba(0, 205, 172, 0.2); */
 }
 
-#work .block .light-teal, #continue .block .light-teal {
+#work .block .light-teal, .continue .block .light-teal {
     background: rgba(0, 205, 172, 0.2);
     height: 100%;
     width: 100%;
@@ -569,7 +573,7 @@ button {
     /* box-shadow: -10px 10px 0 rgba(80, 204, 96, 0.2); */
 }
 
-#work .block .light-green, #continue .block .light-green {
+#work .block .light-green, .continue .block .light-green {
     background: rgba(80, 204, 96, 0.2);
     height: 100%;
     width: 100%;
@@ -601,7 +605,7 @@ button {
     /* box-shadow: 10px 10px 0 rgba(148, 113, 107, 0.2); */
 }
 
-#work .block .light-copper, #continue .block .light-copper {
+#work .block .light-copper, .continue .block .light-copper {
     background: rgba(148, 113, 107, 0.2);
     height: 100%;
     width: 100%;
@@ -944,7 +948,7 @@ footer a:hover {
 }
 
 .mdi-code-tags:before {
-  content: "\F174";
+    content: "\F174";
 }
 
 .mdi-invert-colors:before {
@@ -983,8 +987,8 @@ button.mdi {
     #thoughts ol {
         padding: 2em 2em 3em 2em;
     }
-    .section  {
-        margin: 0 2em 1em 2em;
+    .section {
+        padding: 0 2em;
     }
     .block:first-of-type {
         margin-top: 0;
@@ -1072,24 +1076,34 @@ button.mdi {
         -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
-    #continue {
+    .section .full {
+        width: auto;
+    }
+    .overflow {
         overflow-x: auto;
     }
-    #continue .add-side-padding-on-mobile {
+    .add-left-padding-on-mobile {
         padding: 0 2em;
     }
-    .section .unit {
+    .section .unit, .section.overflow {
         padding-left: 0;
         padding-right: 0;
     }
     .section .half, .section .third {
         width: 100%;
     }
-    .block.third {
-        margin: 1.5em 1.25em 2em 1.25em;
+    .section .third, .block.third {
+        margin: 2em 1.25em 2em 1.25em;
         min-width: 220px;
     }
-    .section .third {
-        margin: 0.5em 0;
+    .section .third.transparent {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .section .third.transparent:first-of-type {
+        margin-bottom: 0;
+    }
+    .section .third.transparent:last-of-type {
+        margin-top: 0;
     }
 }
