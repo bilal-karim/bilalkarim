@@ -293,6 +293,13 @@ button {
     width: 50%;
 }
 
+.section .half.with-bg {
+    padding: 1.5em;
+    margin: 1.5em;
+    border-radius: 20px;
+    background: #fff;
+}
+
 .section .third {
     width: 33.3332%;
     padding: 1.5em;
@@ -302,29 +309,18 @@ button {
 }
 
 .section .transparent {
-    /* background: transparent; */
     padding: 1em;
 }
 
 .section .circle {
-    /* height: 52px; */
-    /* width: 52px; */
-    /* border-radius: 52px; */
     margin-right: 1em;
 }
 
-/* .section .circle .inner {
-    background: #fbfbfb;
-    height: 48px;
-    width: 48px;
-    border-radius: 48px;
-} */
-
-.section .third:first-of-type {
+.section .third:first-of-type, .section .half.with-bg:first-of-type {
     margin-left: 0;
 }
 
-.section .third:last-of-type {
+.section .third:last-of-type, .section .half.with-bg:last-of-type {
     margin-right: 0;
 }
 
