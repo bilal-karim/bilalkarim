@@ -618,7 +618,7 @@ button {
 /* H WEDS A */
 
 .copper-grd {
-    background: linear-gradient(to right, #94716B 0%, #B79891 100%);
+    background: linear-gradient(to right, #956356 0%, #debeb2 100%);
     /* box-shadow: 10px 10px 0 rgba(148, 113, 107, 0.2); */
 }
 
@@ -644,13 +644,13 @@ button {
 }
 
 .copper-text-color {
-    color: #7a5c57;
+    color: #956356;
 }
 
 /* FLYVU */
 
 .blue-grd {
-    background: linear-gradient(to right, #04befe 0%, #4481eb 100%);
+    background: linear-gradient(to right, #04befe 0%, #3774df 100%);
     /* box-shadow: -10px 10px 0 rgba(4, 190, 254, 0.2); */
 }
 
