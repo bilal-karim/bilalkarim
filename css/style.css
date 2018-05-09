@@ -615,6 +615,16 @@ button {
     color: #009c2d;
 }
 
+.green-grd-text {
+    color: #009c2d;
+    background: -webkit-linear-gradient(#50cc60, #009c2d);
+    background: linear-gradient(to right, #50cc60 0%, #009c2d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
 /* H WEDS A */
 
 .copper-grd {
@@ -645,6 +655,16 @@ button {
 
 .copper-text-color {
     color: #956356;
+}
+
+.copper-grd-text {
+    color: #956356;
+    background: -webkit-linear-gradient(#956356, #debeb2);
+    background: linear-gradient(to right, #956356 0%, #debeb2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
 /* FLYVU */
@@ -915,6 +935,26 @@ footer a:hover {
     color: #189dad;
     background: -webkit-linear-gradient(#00cdac, #189dad);
     background: linear-gradient(to right, #00cdac 0%, #189dad 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.mdi.green:before {
+    color: #009c2d;
+    background: -webkit-linear-gradient(#50cc60, #009c2d);
+    background: linear-gradient(to right, #50cc60 0%, #009c2d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.mdi.copper:before {
+    color: #956356;
+    background: -webkit-linear-gradient(#956356, #debeb2);
+    background: linear-gradient(to right, #956356 0%, #debeb2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
