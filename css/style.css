@@ -338,6 +338,7 @@ button {
 }
 
 .section h1 {
+    font-size: 1.125em;
     background: #fbfbfb;
     padding: 4px 8px;
     display: inline-block;
