@@ -196,6 +196,7 @@ header a {
 .logo h2 {
     color: rgba(16, 16, 16, 0.6);
     font-size: 0.688em;
+    width: 140px;
 }
 
 .logo h2:after {
@@ -255,6 +256,7 @@ button {
     padding: 12px 0 0 0;
     color: rgba(16, 16, 16, 0.6);
     width: 100%;
+    line-height: 1.5;
 }
 
 /* SECTIONS */
@@ -1038,6 +1040,14 @@ footer a:hover {
 
 .mdi-margin:before {
     content: "\F353";
+}
+
+.mdi-bookmark-check:before {
+    content: "\F0C1";
+}
+
+.mdi-finance:before {
+    content: "\F81E";
 }
 
 button.mdi {

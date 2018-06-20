@@ -50,47 +50,36 @@
 <!--PROBLEM-->
     <div class="unit half">
         <div class="line flex align-vertically">
-            <h1><strong>Problem</strong></h1>
+            <h1><strong>Limited photo booth prints</strong></h1>
         </div>
         <div class="description">
-            <p>Existing energy efficiency solutions don’t motivate homeowners to make improvements. As a homeowner, it’s difficult to fix a problem you can’t see.</p>
+            <p>Most event photo booths provide limited prints to attendees. People want a copy of their group photo instantly. They end up taking and sharing a poorly framed photo of the print itself.</p>
         </div>
     </div>
 <!--SOLUTION-->
     <div class="unit half">
         <div class="line flex align-vertically">
-            <h1><strong>Solution</strong></h1>
+            <h1><strong>Real-time photo gallery</strong></h1>
         </div>
         <div class="description">
-            <p>Create a responsive web application with Heat Loss Maps and Ratings at its core to visually reveal inefficiencies inside and around homes, communities, and cities.</p>
+            <p>I wanted to solve this problem by enabling event attendees to instantly access and share their group photo through a simple and fast responsive web app.</p>
         </div>
     </div>
 </div>
 <!--FEATURE IMAGE-->
 <div class="section wrapper">
     <div class="feature-image flex align-vertically align-horizontally">
-        <p class="no-padding">Insert images here.</p>
-    </div>
-</div>
-<!--OBJECTIVES-->
-<div class="section wrapper">
-    <div class="unit full">
-        <div class="line flex align-vertically">
-            <h1><strong>Objectives</strong></h1>
-        </div>
-        <div class="description">
-            <p>Engage and educate homeowners with their home’s heat loss, and connect them with local service providers and incentives to help improve their home’s comfort, savings, and energy efficiency.</p>
-        </div>
+        <p class="no-padding">Insert feature image here</p>
     </div>
 </div>
 <!--INVOLVEMENT-->
 <div class="section wrapper">
     <div class="unit full">
         <div class="line flex align-vertically">
-            <h1><strong>Involvement</strong></h1>
+            <h1><strong>Process</strong></h1>
         </div>
         <div class="description">
-            <p class="no-bottom-padding">As a Product Design Lead, I oversee the entire product lifecycle of MyHEAT’s responsive web application&mdash;everything from design to full-stack development&mdash;using an agile process. This includes creation of wireframes, pixel-perfect mockups, rapid prototypes, and code optimization to deliver a unified user experience across all platforms.</p>
+            <p class="no-bottom-padding">The design of the responsive web app was straight-forward. Photos were presented in the UI using a simple grid&mdash;similar to what one would see on Instagram or Flickr. Majority of the development time was spent on making sure that the overall web app was fast. For me and the user, photos from the camera had to upload and download fast. To achieve this, the camera was tethered to a MacBook Pro with Lightroom, and also connected to an EC2 instance in the background. As soon as the camera shutter was pressed, the photo was uploaded to an output folder on the server. Once the photos were uploaded in the appropriate directory, Flask handled on-the-fly resizing of the images. The gallery was also automatically refreshed every 30 seconds.</p>
         </div>
     </div>
 </div>
@@ -115,7 +104,7 @@
 </div>
 <div class="section wrapper">
     <div class="feature-image flex align-vertically align-horizontally">
-        <p class="no-padding">Insert images here.</p>
+        <p class="no-padding">Insert carousel images here</p>
     </div>
 </div>
 <!--CHALLENGES-->
@@ -125,16 +114,15 @@
             <h1><strong>Challenges</strong></h1>
         </div>
         <div class="description">
-            <p class="no-bottom-padding">Several challenges were experienced during each phase of the product lifecycle. Although significant improvements were made over time, a digital product is never finished. The solutions to these challenges will always need some refinement.</p>
+            <p class="no-bottom-padding">Usability of the responsive web application and its performance were the two challenges experience during this project.</p>
             <div class="flex mobile-wrap">
                 <div class="unit half">
-                    <p class="no-bottom-padding"><span class="copper-grd-text">Demographics.</span> Homeowners vary across multiple age groups&mdash;from 25-34 to 65+. How does one create a responsive web application that is universally intuitive and easy-to-understand regardless of the age group? Furthermore, the perception of energy efficiency may also vary from city to city. How does one accomodate for those changes in perception throughout the tone and language of MyHEAT?</p>
+                    <p><span class="copper-grd-text"><strong>Usability.</strong></span> Since there are various demographies at these types of events, it was important to make sure that the web app was universally easy-to-use. For this reason I chose a simple grid-based UI for the photo gallery due to people’s familiarty with existing services like Instagram.</p>
                 </div>
                 <div class="unit half">
-                    <p class="no-bottom-padding"><span class="copper-grd-text">Data complexity.</span> Data themselves, namely the Heat Loss Maps, are complex to begin with. How does one guide the user as what they’re seeing in their home’s Heat Loss Map? Through the use of summary cards or FAQ-style articles? Additionally, due to the nature of these data, size can also be issue which can affect development time in terms of loading performance, and impact the user experience of the application.</p>
+                    <p><span class="copper-grd-text"><strong>Performance.</strong></span> As discussed previously, it was important to ensure fast uploading and loading of images to ensure a positive user experience. Although optimization was time-consuming, it was necessary to ensure a great end-user experience. I struck a good balance between load performance and image quality.</p>
                 </div>
             </div>
-            <p>Ultimately, these affect the usability and accessibility of MyHEAT’s responsive web application, which can impact its success metrics.</p>
         </div>
     </div>
 </div>
@@ -148,14 +136,14 @@
 </div>
 <div class="continue overflow flex wrapper">
     <div class="flex add-left-padding-on-mobile">
-        <!--MONEY AFTER GRADUATION-->
-        <div id="mag" class="block teal-grd third flex mobile-wrap">
+        <!--SPORTSITY-->
+        <div id="sportsity" class="block green-grd third flex mobile-wrap">
             <div class="title minify">
-                <h1 class="teal-text-shadow">Money After Grad</h1>
-                <p class="teal-text-shadow">Live a healthy, wealthy, and happy life.</p>
-                <a href="#" class="flex align-vertically teal-text-color teal-box-shadow">View</a>
+                <h1 class="green-text-shadow">Sportsity</h1>
+                <p class="green-text-shadow">Discover nearby courts for outdoor sports.</p>
+                <a href="#" class="flex align-vertically green-text-color green-box-shadow">View</a>
             </div>
-            <div class="light-teal"></div>
+            <div class="light-green"></div>
         </div>
         <!--MYHEAT-->
         <div id="myheat" class="block orange-grd third flex mobile-wrap">
