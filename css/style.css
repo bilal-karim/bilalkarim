@@ -1068,21 +1068,18 @@ button.mdi {
 /* RESPONSIVE MEDIA QUERIES */
 
 @media screen and (max-width: 48em) {
-    #work.wrapper, #about.wrapper {
-        padding: 0 2em;
+    .hero {
+        margin: 3em;
+    }
+    .section.wrapper {
+        margin: 0 3em;
     }
     #thoughts ol {
-        padding: 0 2em;
+        margin: 3em;
     }
-    .section {
-        padding: 0 2em;
+    #work.wrapper, #about.wrapper {
+        margin: 3em;
     }
-    /* .block:first-of-type {
-        margin-top: 0;
-    } */
-    /* .block:last-of-type {
-        margin-bottom: 1em;
-    } */
 }
 
 @media screen and (max-width: 37.5em) {
@@ -1134,6 +1131,9 @@ button.mdi {
     .hero h2 {
         font-size: 0.875em;
     }
+    #about.wrapper, #thoughts ol, #work.wrapper {
+        margin: 2em;
+    }
     #work .title {
         -webkit-flex: auto;
         flex: auto;
@@ -1141,6 +1141,9 @@ button.mdi {
     }
     #work .sample {
         padding: 0 2em 2em 2em;
+    }
+    .section.wrapper {
+        margin: 0 2em;
     }
     #thoughts ol {
         font-size: 0.875em;
