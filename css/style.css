@@ -246,7 +246,7 @@ button {
 }
 
 .hero h1 {
-    font-size: 2.375em;
+    font-size: 2.125em;
     font-weight: 300;
     line-height: 1.3;
     width: 100%;
@@ -1044,6 +1044,10 @@ footer a:hover {
 
 .mdi-bookmark-check:before {
     content: "\F0C1";
+}
+
+.mdi-trophy-award:before {
+    content: "\F539";
 }
 
 .mdi-finance:before {
