@@ -16,152 +16,154 @@
 <header>
     <div class="flex space-between align-vertically wrapper mobile-wrap">
         <a href="../../index.html">
-            <div class="logo flex wrap align-vertically mobile-center animated fadeInDown">
+            <div class="logo flex wrap align-vertically mobile-center">
                 <div class="name">
                     <h1><strong>Bilal Karim</strong></h1>
                     <h2></h2>
                 </div>
             </div>
         </a>
-        <div class="mobile-menu animated fadeInDown">
+        <div class="mobile-menu">
             <button class="mdi mdi-menu"></button>
         </div>
-        <nav class="animated fadeInDown hide-on-mobile">
+        <nav class="hide-on-mobile">
             <a href="index.html#work">Work</a>
             <a href="index.html#thoughts">Thoughts</a>
             <a href="index.html#about">About</a>
         </nav>
     </div>
 </header>
-<!--BANNER-->
-<div id="work" class="wrapper animated fadeInUp">
-    <div id="sportsity" class="block copper-grd">
-        <div class="flex mobile-wrap">
-            <div class="title minify">
-                <h1 class="copper-text-shadow">H Weds A</h1>
-                <p class="copper-text-shadow">Instantly share pictures from event photo booths with a near real-time online photo gallery.</p>
-                <!-- <a href="#" class="flex align-vertically copper-text-color copper-box-shadow">Visit Site</a> -->
-            </div>
-        </div>
-        <div class="light-copper"></div>
-    </div>
-</div>
-<div class="section wrapper flex mobile-wrap">
-<!--PROBLEM-->
-    <div class="unit half">
-        <div class="line flex align-vertically">
-            <h1><strong>Limited photo booth prints</strong></h1>
-        </div>
-        <div class="description">
-            <p class="no-bottom-padding add-regular-padding-on-mobile">Most event photo booths provide limited prints to attendees. People want a copy of their group photo instantly. They end up taking and sharing a poorly framed photo of the print itself.</p>
-        </div>
-    </div>
-<!--SOLUTION-->
-    <div class="unit half">
-        <div class="line flex align-vertically">
-            <h1><strong>Real-time photo gallery</strong></h1>
-        </div>
-        <div class="description">
-            <p class="no-bottom-padding">I wanted to solve this problem by enabling event attendees to instantly access and share their group photo through a simple and fast responsive web app.</p>
-        </div>
-    </div>
-</div>
-<!--FEATURE IMAGE-->
-<div class="section wrapper">
-    <div class="feature-image flex align-vertically align-horizontally">
-        <p class="no-padding">Insert feature image here</p>
-    </div>
-</div>
-<!--INVOLVEMENT-->
-<div class="section wrapper">
-    <div class="unit full">
-        <div class="line flex align-vertically">
-            <h1><strong>Process</strong></h1>
-        </div>
-        <div class="description">
-            <p class="no-bottom-padding">The design of the responsive web app was straight-forward. Photos were presented in the UI using a simple grid&mdash;similar to what one would see on Instagram or Flickr. Majority of the development time was spent on making sure that the overall web app was fast. For me and the user, photos from the camera had to upload and download fast. To achieve this, the camera was tethered to a MacBook Pro with Lightroom, and also connected to an EC2 instance in the background. As soon as the camera shutter was pressed, the photo was uploaded to an output folder on the server. Once the photos were uploaded in the appropriate directory, Flask handled on-the-fly resizing of the images. The gallery was also automatically refreshed every 30 seconds.</p>
-        </div>
-    </div>
-</div>
-<div class="section overflow flex wrapper">
-    <div class="flex full add-overflow-padding-on-mobile">
-        <div class="half with-bg">
-            <h2 class="copper-grd-text"><i class="mdi mdi-invert-colors copper area-icon"></i><strong>Design</strong></h2>
-            <ul>
-                <li class="mdi check">Brand &amp; Identity</li>
-                <li class="mdi check">UX/UI</li>
-            </ul>
-        </div>
-        <div class="half with-bg">
-            <h2 class="copper-grd-text"><i class="mdi mdi-code-tags copper area-icon"></i><strong>Development</strong></h2>
-            <ul>
-                <li class="mdi check">Front-end</li>
-                <li class="mdi check">Back-end</li>
-                <li class="mdi check">Cloud infrastructure</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="section wrapper">
-    <div class="feature-image flex align-vertically align-horizontally">
-        <p class="no-padding">Insert carousel images here</p>
-    </div>
-</div>
-<!--CHALLENGES-->
-<div class="section wrapper">
-    <div class="unit full">
-        <div class="line flex align-vertically">
-            <h1><strong>Challenges</strong></h1>
-        </div>
-        <div class="description">
-            <p class="no-bottom-padding">Usability of the responsive web application and its performance were the two challenges experience during this project.</p>
+<div class="animated fadeInUp">
+    <!--BANNER-->
+    <div id="work" class="wrapper">
+        <div id="sportsity" class="block copper-grd">
             <div class="flex mobile-wrap">
-                <div class="unit half">
-                    <p class="no-bottom-padding"><span class="copper-grd-text"><strong>Usability.</strong></span> Since there are various demographies at these types of events, it was important to make sure that the web app was universally easy-to-use. For this reason I chose a simple grid-based UI for the photo gallery due to people’s familiarty with existing services like Instagram.</p>
+                <div class="title minify">
+                    <h1 class="copper-text-shadow">H Weds A</h1>
+                    <p class="copper-text-shadow">Instantly share pictures from event photo booths with a near real-time online photo gallery.</p>
+                    <!-- <a href="#" class="flex align-vertically copper-text-color copper-box-shadow">Visit Site</a> -->
                 </div>
-                <div class="unit half">
-                    <p><span class="copper-grd-text"><strong>Performance.</strong></span> As discussed previously, it was important to ensure fast uploading and loading of images to ensure a positive user experience. Although optimization was time-consuming, it was necessary to ensure a great end-user experience. I struck a good balance between load performance and image quality.</p>
+            </div>
+            <div class="light-copper"></div>
+        </div>
+    </div>
+    <div class="section wrapper flex mobile-wrap">
+    <!--PROBLEM-->
+        <div class="unit half">
+            <div class="line flex align-vertically">
+                <h1><strong>Limited photo booth prints</strong></h1>
+            </div>
+            <div class="description">
+                <p class="no-bottom-padding add-regular-padding-on-mobile">Most event photo booths provide limited prints to attendees. People want a copy of their group photo instantly. They end up taking and sharing a poorly framed photo of the print itself.</p>
+            </div>
+        </div>
+    <!--SOLUTION-->
+        <div class="unit half">
+            <div class="line flex align-vertically">
+                <h1><strong>Real-time photo gallery</strong></h1>
+            </div>
+            <div class="description">
+                <p class="no-bottom-padding">I wanted to solve this problem by enabling event attendees to instantly access and share their group photo through a simple and fast responsive web app.</p>
+            </div>
+        </div>
+    </div>
+    <!--FEATURE IMAGE-->
+    <div class="section wrapper">
+        <div class="feature-image flex align-vertically align-horizontally">
+            <p class="no-padding">Insert feature image here</p>
+        </div>
+    </div>
+    <!--INVOLVEMENT-->
+    <div class="section wrapper">
+        <div class="unit full">
+            <div class="line flex align-vertically">
+                <h1><strong>Process</strong></h1>
+            </div>
+            <div class="description">
+                <p class="no-bottom-padding">The design of the responsive web app was straight-forward. Photos were presented in the UI using a simple grid&mdash;similar to what one would see on Instagram or Flickr. Majority of the development time was spent on making sure that the overall web app was fast. For me and the user, photos from the camera had to upload and download fast. To achieve this, the camera was tethered to a MacBook Pro with Lightroom, and also connected to an EC2 instance in the background. As soon as the camera shutter was pressed, the photo was uploaded to an output folder on the server. Once the photos were uploaded in the appropriate directory, Flask handled on-the-fly resizing of the images. The gallery was also automatically refreshed every 30 seconds.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section overflow flex wrapper">
+        <div class="flex full add-overflow-padding-on-mobile">
+            <div class="half with-bg">
+                <h2 class="copper-grd-text"><i class="mdi mdi-invert-colors copper area-icon"></i><strong>Design</strong></h2>
+                <ul>
+                    <li class="mdi check">Brand &amp; Identity</li>
+                    <li class="mdi check">UX/UI</li>
+                </ul>
+            </div>
+            <div class="half with-bg">
+                <h2 class="copper-grd-text"><i class="mdi mdi-code-tags copper area-icon"></i><strong>Development</strong></h2>
+                <ul>
+                    <li class="mdi check">Front-end</li>
+                    <li class="mdi check">Back-end</li>
+                    <li class="mdi check">Cloud infrastructure</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section wrapper">
+        <div class="feature-image flex align-vertically align-horizontally">
+            <p class="no-padding">Insert carousel images here</p>
+        </div>
+    </div>
+    <!--CHALLENGES-->
+    <div class="section wrapper">
+        <div class="unit full">
+            <div class="line flex align-vertically">
+                <h1><strong>Challenges</strong></h1>
+            </div>
+            <div class="description">
+                <p class="no-bottom-padding">Usability of the responsive web application and its performance were the two challenges experience during this project.</p>
+                <div class="flex mobile-wrap">
+                    <div class="unit half">
+                        <p class="no-bottom-padding"><span class="copper-grd-text"><strong>Usability.</strong></span> Since there are various demographies at these types of events, it was important to make sure that the web app was universally easy-to-use. For this reason I chose a simple grid-based UI for the photo gallery due to people’s familiarty with existing services like Instagram.</p>
+                    </div>
+                    <div class="unit half">
+                        <p><span class="copper-grd-text"><strong>Performance.</strong></span> As discussed previously, it was important to ensure fast uploading and loading of images to ensure a positive user experience. Although optimization was time-consuming, it was necessary to ensure a great end-user experience. I struck a good balance between load performance and image quality.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--CONTINUE EXPLORING-->
-<div class="section wrapper">
-    <div class="unit full">
-        <div class="line flex align-vertically">
-            <h1><strong>Continue exploring</strong></h1>
+    <!--CONTINUE EXPLORING-->
+    <div class="section wrapper">
+        <div class="unit full">
+            <div class="line flex align-vertically">
+                <h1><strong>Continue exploring</strong></h1>
+            </div>
         </div>
     </div>
-</div>
-<div class="continue overflow flex wrapper">
-    <div class="flex add-overflow-padding-on-mobile">
-        <!--SPORTSITY-->
-        <div id="sportsity" class="block green-grd third flex mobile-wrap">
-            <div class="title minify">
-                <h1 class="green-text-shadow">Sportsity</h1>
-                <p class="green-text-shadow">Discover nearby courts for outdoor sports.</p>
-                <a href="#" class="flex align-vertically green-text-color green-box-shadow">View</a>
+    <div class="continue overflow flex wrapper">
+        <div class="flex add-overflow-padding-on-mobile">
+            <!--SPORTSITY-->
+            <div id="sportsity" class="block green-grd third flex mobile-wrap">
+                <div class="title minify">
+                    <h1 class="green-text-shadow">Sportsity</h1>
+                    <p class="green-text-shadow">Discover nearby courts for outdoor sports.</p>
+                    <a href="#" class="flex align-vertically green-text-color green-box-shadow">View</a>
+                </div>
+                <div class="light-green"></div>
             </div>
-            <div class="light-green"></div>
-        </div>
-        <!--MYHEAT-->
-        <div id="myheat" class="block orange-grd third flex mobile-wrap">
-            <div class="title minify">
-                <h1 class="orange-text-shadow">MyHEAT</h1>
-                <p class="orange-text-shadow">Improve home comfort with heat loss maps.</p>
-                <a href="#" class="flex align-vertically orange-text-color orange-box-shadow">View</a>
+            <!--MYHEAT-->
+            <div id="myheat" class="block orange-grd third flex mobile-wrap">
+                <div class="title minify">
+                    <h1 class="orange-text-shadow">MyHEAT</h1>
+                    <p class="orange-text-shadow">Improve home comfort with heat loss maps.</p>
+                    <a href="#" class="flex align-vertically orange-text-color orange-box-shadow">View</a>
+                </div>
+                <div class="light-orange"></div>
             </div>
-            <div class="light-orange"></div>
-        </div>
-        <!--VISUALOG-->
-        <div id="visualog" class="block grey-grd third flex mobile-wrap">
-            <div class="title minify">
-                <h1 class="grey-text-shadow">Visualog</h1>
-                <p class="grey-text-shadow">Visualize a year-long journey.</p>
-                <a href="#" class="flex align-vertically grey-text-color grey-box-shadow">View</a>
+            <!--VISUALOG-->
+            <div id="visualog" class="block grey-grd third flex mobile-wrap">
+                <div class="title minify">
+                    <h1 class="grey-text-shadow">Visualog</h1>
+                    <p class="grey-text-shadow">Visualize a year-long journey.</p>
+                    <a href="#" class="flex align-vertically grey-text-color grey-box-shadow">View</a>
+                </div>
+                <div class="light-grey"></div>
             </div>
-            <div class="light-grey"></div>
         </div>
     </div>
 </div>
