@@ -102,6 +102,14 @@ strong {
 
 /* UTILITY CLASSES */
 
+img {
+    width: 100%;
+}
+
+.mock {
+    margin: 3.875em 0 2em 0;
+}
+
 .no-bottom-padding {
     padding-bottom: 0 !important;
 }
@@ -393,7 +401,7 @@ button {
 #work .title {
     -webkit-flex: 1;
     flex: 1;
-    padding: 4em 2em;
+    padding: 4em 0em 4em 2em;
 }
 
 #work .title.minify, .continue .title.minify {
@@ -449,7 +457,11 @@ button {
 #work .sample {
     -webkit-flex: 1;
     flex: 1;
-    padding: 4em 2em;
+    padding: 1em 2em 1em 1em;
+}
+
+#work .sample.reverse {
+    padding: 1em 1em 1em 2em;
 }
 
 .block, .block.third {
@@ -724,6 +736,15 @@ button {
 
 #thoughts ol li {
     line-height: 1.3;
+    margin: 16px 0;
+}
+
+#thoughts ol li:first-child {
+    margin-top: 0;
+}
+
+#thoughts ol li:last-child {
+    margin-bottom: 0;
 }
 
 #thoughts ol li a, .section p a {
@@ -737,10 +758,6 @@ button {
     border-bottom: 1px solid transparent;
     transition: color 0.3s, background 0.2s;
     color: #fff;
-}
-
-#thoughts ol li:last-child {
-    margin-top: 16px;
 }
 
 /* ABOUT */
@@ -1142,7 +1159,7 @@ button.mdi {
         flex: auto;
         padding: 2em;
     }
-    #work .sample {
+    #work .sample, #work .sample.reverse {
         padding: 0 2em 2em 2em;
     }
     .section.wrapper {
