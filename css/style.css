@@ -134,6 +134,10 @@ img {
     margin: 0 !important;
 }
 
+.add-bottom-margin {
+    margin-bottom: 3em !important;
+}
+
 .flex-1 {
     -webkit-flex: 1;
     flex: 1;
@@ -388,12 +392,21 @@ button {
     color: rgba(16, 16, 16, 0.3);
 }
 
-.section .feature-image {
+.section .process-image, .section .process-image-second {
     width: 100%;
-    height: 200px;
+    padding: 2em;
     background: #fff;
-    margin: 1.5em 0 3em 0;
+    margin: 1.5em 0;
     border-radius: 20px;
+}
+
+.section .process-image.solo {
+    margin-bottom: 3em;
+}
+
+.section .process-image-second {
+    padding: 0 2em;
+    margin: 0 0 3em 0;
 }
 
 /* SELECTED WORK */
@@ -500,7 +513,7 @@ button {
     box-shadow: 0 5px 20px rgba(240, 152, 25, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel 20s 1s infinite;
+    animation: swivel 15s 1s infinite;
 }
 
 .orange-text-shadow {
@@ -542,7 +555,7 @@ button {
     box-shadow: 0 5px 20px rgba(55, 94, 120, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel-reverse 20s 1s infinite;
+    animation: swivel-reverse 15s 1s infinite;
 }
 
 .grey-text-shadow {
@@ -584,7 +597,7 @@ button {
     box-shadow: 0 5px 20px rgba(0, 205, 172, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel 20s 1s infinite;
+    animation: swivel 15s 1s infinite;
 }
 
 .teal-text-shadow {
@@ -626,7 +639,7 @@ button {
     box-shadow: 0 5px 20px rgba(80, 204, 96, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel-reverse 20s 1s infinite;
+    animation: swivel-reverse 15s 1s infinite;
 }
 
 .green-text-shadow {
@@ -668,7 +681,7 @@ button {
     box-shadow: 0 5px 20px rgba(148, 113, 107, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel 20s 1s infinite;
+    animation: swivel 15s 1s infinite;
 }
 
 .copper-text-shadow {
@@ -710,7 +723,7 @@ button {
     box-shadow: 0 5px 20px rgba(4, 190, 254, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel-reverse 20s 1s infinite;
+    animation: swivel-reverse 15s 1s infinite;
 }
 
 .blue-text-shadow {
@@ -1217,7 +1230,7 @@ button.mdi {
     .section .half, .section .third {
         width: 100%;
     }
-    .section .feature-image {
+    .section .process-image {
         margin: 2em 0 3em 0;
     }
     .section .third, .block.third, .section .half.with-bg {

@@ -16,3 +16,6 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+setTimeout(function() {
+    $('.animated').removeClass('fadeInUp');
+}, 700);
