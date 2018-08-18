@@ -107,7 +107,7 @@ img {
 }
 
 .mock {
-    margin: 3.875em 0 2em 0;
+    margin: 3em 0 0 0;
 }
 
 .no-bottom-padding {
@@ -295,16 +295,20 @@ button {
     padding-bottom: 3em;
 }
 
-.section .unit {
-    padding: 0 1.5em;
+.unit {
+    padding: 3em 0;
 }
 
-.section .full {
+.full {
     width: 100%;
 }
 
-.section .half {
+.half {
     width: 50%;
+}
+
+.half.with-right-padding {
+    padding: 0 0 3em 3em;
 }
 
 .section .half.with-bg {
@@ -401,7 +405,7 @@ button {
 }
 
 .section .process-image.solo {
-    margin-bottom: 3em;
+    margin-bottom: 0;
 }
 
 .section .process-image-second {
@@ -418,7 +422,7 @@ button {
 #work .title {
     -webkit-flex: 1;
     flex: 1;
-    padding: 4em 0em 4em 2em;
+    padding: 4em 2em;
 }
 
 #work .title.minify, .continue .title.minify {
@@ -483,14 +487,14 @@ button {
 
 .block, .block.third {
     border-radius: 20px;
-    margin: 3em 0;
+    /* margin: 3em 0; */
     position: relative;
     z-index: 1;
 }
 
 .block.third {
     width: 33.3332%;
-    margin: 3em 1.25em;
+    margin: 0 1.25em 3em 1.25em;
 }
 
 .block.third:first-of-type {
