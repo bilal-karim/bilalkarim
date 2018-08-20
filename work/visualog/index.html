@@ -36,34 +36,38 @@
 <div class="animated fadeInUp">
     <!--BANNER-->
     <div id="work" class="wrapper">
-        <div id="visualog" class="block grey-grd">
-            <div class="flex mobile-wrap">
-                <div class="title minify">
-                    <h1 class="grey-text-shadow">Visualog</h1>
-                    <p class="grey-text-shadow">An experiment at visualizing a year-long journey using Google Maps, with data from Moves &amp; Instagram.</p>
-                    <a href="https://visualog.co" class="flex align-vertically grey-text-color grey-box-shadow">Visit Site</a>
+        <div class="unit full">
+            <div id="visualog" class="block grey-grd">
+                <div class="flex mobile-wrap">
+                    <div class="title minify">
+                        <h1 class="grey-text-shadow">Visualog</h1>
+                        <p class="grey-text-shadow">An experiment at visualizing a year-long journey using Google Maps, with data from Moves &amp; Instagram.</p>
+                        <a href="https://visualog.co" class="flex align-vertically grey-text-color grey-box-shadow">Visit Site</a>
+                    </div>
                 </div>
+                <div class="light-grey"></div>
             </div>
-            <div class="light-grey"></div>
         </div>
     </div>
-    <div class="section wrapper flex mobile-wrap">
-    <!--PROBLEM-->
-        <div class="unit half">
-            <div class="line flex align-vertically">
-                <h1><strong>Travel curiosity</strong></h1>
+    <div class="section wrapper">
+        <div class="unit full flex mobile-wrap">
+            <!--PROBLEM-->
+            <div class="half with-padding">
+                <div class="line flex align-vertically">
+                    <h1><strong>Travel curiosity</strong></h1>
+                </div>
+                <div class="description">
+                    <p class="no-bottom-padding add-regular-padding-on-mobile">While traveling around cities, <strong>where</strong> do I spend my time, and <strong>how</strong> do I get to where I’m going? What movement patterns could be seen from a year’s worth of journey?</p>
+                </div>
             </div>
-            <div class="description">
-                <p class="no-bottom-padding add-regular-padding-on-mobile">While traveling around cities, <strong>where</strong> do I spend my time, and <strong>how</strong> do I get to where I’m going? What movement patterns could be seen from a year’s worth of journey?</p>
-            </div>
-        </div>
-    <!--SOLUTION-->
-        <div class="unit half">
-            <div class="line flex align-vertically">
-                <h1><strong>Movement tracking</strong></h1>
-            </div>
-            <div class="description">
-                <p class="no-bottom-padding">Track my location using Moves to assemble a year-long dataset of different movements and places visited for understanding where and how I travel around cities.</p>
+        <!--SOLUTION-->
+            <div class="half with-padding">
+                <div class="line flex align-vertically">
+                    <h1><strong>Movement tracking</strong></h1>
+                </div>
+                <div class="description">
+                    <p class="no-bottom-padding">Track my location using Moves to assemble a year-long dataset of different movements and places visited for understanding where and how I travel around cities.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -120,15 +124,13 @@
             <div class="line flex align-vertically">
                 <h1><strong>Challenges</strong></h1>
             </div>
-            <div class="description">
-                <p class="no-bottom-padding">Several challenges&mdash;from continually tracking myself to application performance&mdash;were experienced during the development of this project. Additionally, good contrast is needed to highlight the data. Initially I wanted the map style to reflect time of the day, but struggled with technical development.</p>
-                <div class="flex mobile-wrap">
-                    <div class="unit half">
-                        <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Constant tracking.</strong></span> Using Moves on an iPhone 7 to constantly track myself was challenging. Firstly, it greatly affected the device battery life so I had to constantly manage location tracking by turning it off and on. Secondly, I had to get into the habit turning location tracking on if it was off in the first place.</p>
-                    </div>
-                    <div class="unit half">
-                        <p><span class="grey-grd-text"><strong>App performance.</strong></span> 341 days of movement and places visited was initially a heavy dataset and slow to load. I struggled with loading all of the data on the map at once. After trying multiple techniques, I found success in sending one request to fetch data instead of two, and by using GZIP compression on the server-side.</p>
-                    </div>
+            <p class="no-bottom-padding">Several challenges&mdash;from continually tracking myself to application performance&mdash;were experienced during the development of this project. Additionally, good contrast is needed to highlight the data. Initially I wanted the map style to reflect time of the day, but struggled with technical development.</p>
+            <div class="flex mobile-wrap">
+                <div class="half with-padding no-bottom-padding-on-mobile">
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Constant tracking.</strong></span> Using Moves on an iPhone 7 to constantly track myself was challenging. Firstly, it greatly affected the device battery life so I had to constantly manage location tracking by turning it off and on. Secondly, I had to get into the habit turning location tracking on if it was off in the first place.</p>
+                </div>
+                <div class="half with-padding no-bottom-padding-on-mobile">
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>App performance.</strong></span> 341 days of movement and places visited was initially a heavy dataset and slow to load. I struggled with loading all of the data on the map at once. After trying multiple techniques, I found success in sending one request to fetch data instead of two, and by using GZIP compression on the server-side.</p>
                 </div>
             </div>
         </div>
@@ -139,23 +141,21 @@
             <div class="line flex align-vertically">
                 <h1><strong>Future ideas</strong></h1>
             </div>
-            <div class="description">
-                <p class="no-bottom-padding">Some ideas could not make it to the initial release of this project due to technical and cost limitations, but will be worth exploring in future.</p>
-                <div class="flex mobile-wrap">
-                    <div class="unit half">
-                        <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Street view timelapse.</strong></span> I initially wanted to play certain routes with a start and end point in the form of a timelapse using Google Street View, but ran into API and cost limitations.</p>
-                    </div>
-                    <div class="unit half">
-                        <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Multi-year browsing.</strong></span> Furthermore, I’d love to be able to browse multi-year movement and places data to see how my travel patterns change with time.</p>
-                    </div>
+            <p class="no-bottom-padding">Some ideas could not make it to the initial release of this project due to technical and cost limitations, but will be worth exploring in future.</p>
+            <div class="flex mobile-wrap">
+                <div class="half with-padding no-bottom-padding-on-mobile">
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Street view timelapse.</strong></span> I initially wanted to play certain routes with a start and end point in the form of a timelapse using Google Street View, but ran into API and cost limitations.</p>
                 </div>
-                <div class="flex mobile-wrap">
-                    <div class="unit half">
-                        <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Deeper photos integration.</strong></span> Currently, Instagram photos exist on a separate page, but it would be better to incorporate them into the map as well. Deeper photos integration with the map can help with telling a complete story of a particular journey.</p>
-                    </div>
-                    <div class="unit half">
-                        <p><span class="grey-grd-text"><strong>Natural language querying.</strong></span> Using some of the natural language parsing technologies available as part of the Google Cloud Platform, I’d love to be able to just ask the web app where I was on a particular day and time, and have it present that information to be on the map.</p>
-                    </div>
+                <div class="half with-padding no-bottom-padding-on-mobile">
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Multi-year browsing.</strong></span> Furthermore, I’d love to be able to browse multi-year movement and places data to see how my travel patterns change with time.</p>
+                </div>
+            </div>
+            <div class="flex mobile-wrap">
+                <div class="half with-padding no-bottom-padding-on-mobile">
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Deeper photos integration.</strong></span> Currently, Instagram photos exist on a separate page, but it would be better to incorporate them into the map as well. Deeper photos integration with the map can help with telling a complete story of a particular journey.</p>
+                </div>
+                <div class="half with-padding no-bottom-padding-on-mobile">
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Natural language querying.</strong></span> Using some of the natural language parsing technologies available as part of the Google Cloud Platform, I’d love to be able to just ask the web app where I was on a particular day and time, and have it present that information to be on the map.</p>
                 </div>
             </div>
         </div>
