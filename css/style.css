@@ -516,7 +516,7 @@ button {
     box-shadow: 0 5px 20px rgba(240, 152, 25, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel 15s 1s infinite;
+    animation: swivel 10s 1s infinite;
 }
 
 .orange-text-shadow {
@@ -558,7 +558,7 @@ button {
     box-shadow: 0 5px 20px rgba(55, 94, 120, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel-reverse 15s 1s infinite;
+    animation: swivel-reverse 10s 1s infinite;
 }
 
 .grey-text-shadow {
@@ -600,7 +600,7 @@ button {
     box-shadow: 0 5px 20px rgba(0, 205, 172, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel 15s 1s infinite;
+    animation: swivel 10s 1s infinite;
 }
 
 .teal-text-shadow {
@@ -642,7 +642,7 @@ button {
     box-shadow: 0 5px 20px rgba(80, 204, 96, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel-reverse 15s 1s infinite;
+    animation: swivel-reverse 10s 1s infinite;
 }
 
 .green-text-shadow {
@@ -684,7 +684,7 @@ button {
     box-shadow: 0 5px 20px rgba(148, 113, 107, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel 15s 1s infinite;
+    animation: swivel 10s 1s infinite;
 }
 
 .copper-text-shadow {
@@ -711,12 +711,11 @@ button {
 
 /* FLYVU */
 
-.blue-grd {
+/* .blue-grd {
     background: linear-gradient(to right, #04befe 0%, #3774df 100%);
-    /* box-shadow: -10px 10px 0 rgba(4, 190, 254, 0.2); */
-}
+} */
 
-#work .block .light-blue {
+/* #work .block .light-blue {
     background: rgba(4, 190, 254, 0.2);
     height: 100%;
     width: 100%;
@@ -726,7 +725,7 @@ button {
     box-shadow: 0 5px 20px rgba(4, 190, 254, 0.2);
     z-index: -1;
     border-radius: 20px;
-    animation: swivel-reverse 15s 1s infinite;
+    animation: swivel-reverse 10s 1s infinite;
 }
 
 .blue-text-shadow {
@@ -739,7 +738,7 @@ button {
 
 .blue-text-color {
     color: #2ba0f4;
-}
+} */
 
 /* ARTICLES */
 
@@ -1165,7 +1164,7 @@ button.mdi {
         font-size: 0.875em;
     }
     #thoughts ol {
-        padding: 3em 2em 3em 2em;
+        padding: 2em 2em 3.5em 2em;
     }
     #thoughts ol li {
         line-height: 1.5;
