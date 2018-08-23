@@ -511,8 +511,8 @@ button {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -10px;
-    transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+    top: 4px;
+    transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     box-shadow: 0 5px 20px rgba(240, 152, 25, 0.2);
     z-index: -1;
     border-radius: 20px;
@@ -553,8 +553,8 @@ button {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -10px;
-    transform: skew(4deg, 4deg) scale(1.05) rotateX(-35deg);
+    top: 4px;
+    transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     box-shadow: 0 5px 20px rgba(55, 94, 120, 0.2);
     z-index: -1;
     border-radius: 20px;
@@ -595,8 +595,8 @@ button {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -10px;
-    transform: skew(-4deg, -4deg) scale(1.05) rotateX(-35deg);
+    top: 4px;
+    transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     box-shadow: 0 5px 20px rgba(0, 205, 172, 0.2);
     z-index: -1;
     border-radius: 20px;
@@ -637,8 +637,8 @@ button {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -10px;
-    transform: skew(4deg, 4deg) scale(1.05) rotateX(-35deg);
+    top: 4px;
+    transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     box-shadow: 0 5px 20px rgba(80, 204, 96, 0.2);
     z-index: -1;
     border-radius: 20px;
@@ -679,8 +679,8 @@ button {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: -10px;
-    transform: skew(-4deg, -4deg) scale(1.05) rotateX(-35deg);
+    top: 4px;
+    transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     box-shadow: 0 5px 20px rgba(148, 113, 107, 0.2);
     z-index: -1;
     border-radius: 20px;
@@ -819,49 +819,49 @@ footer a:hover {
 
 @-webkit-keyframes swivel {
     0% {
-        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+        transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     50% {
-        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+        transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     100% {
-        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+        transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
 }
 
 @keyframes swivel {
     0% {
-        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+        transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     50% {
-        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+        transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     100% {
-        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+        transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
 }
 
 @-webkit-keyframes swivel-reverse {
     0% {
-        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+        transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     50% {
-        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+        transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     100% {
-        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+        transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
 }
 
 @keyframes swivel-reverse {
     0% {
-        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+        transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     50% {
-        transform: skew(-4deg, -4deg) scale(1.05) rotateX(35deg);
+        transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
     100% {
-        transform: skew(4deg, 4deg) scale(1.05) rotateX(35deg);
+        transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     }
 }
 
