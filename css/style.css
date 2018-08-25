@@ -173,6 +173,7 @@ img {
 header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
+    padding: 0 18px;
 }
 
 header a {
@@ -1101,15 +1102,15 @@ button.mdi {
 /* RESPONSIVE MEDIA QUERIES */
 
 @media screen and (max-width: 48em) {
-    /* .hero {
-        margin: 3em;
-    } */
     .section.wrapper {
-        margin: 0 3em;
+        margin: 0 2em;
     }
-    /* #thoughts ol {
-        margin: 3em;
-    } */
+    #thoughts ol {
+        margin: 0 1em;
+    }
+    #about {
+        padding: 3em 1em;
+    }
     #work.wrapper {
         margin: 0 2em;
     }
@@ -1124,6 +1125,7 @@ button.mdi {
         height: 66px;
         transition: height 0.3s;
         transition-delay: 0.1s;
+        padding: 0;
     }
     header.with-nav {
         height: 109px;
@@ -1183,6 +1185,7 @@ button.mdi {
     }
     #thoughts ol {
         padding: 2em 2em 3.5em 2em;
+        margin: 0;
     }
     #thoughts ol li {
         line-height: 1.5;
@@ -1198,9 +1201,9 @@ button.mdi {
     #work .sample, #work .sample.reverse {
         padding: 0 2em 2em 2em;
     }
-    .section.wrapper {
+    /* .section.wrapper {
         margin: 0 2em;
-    }
+    } */
     #about .profile-pic {
         width: 100%;
         text-align: center;
