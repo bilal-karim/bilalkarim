@@ -1,6 +1,12 @@
 // Toggle mobile menu
 $('.mobile-menu').click(function() {
-    $('nav').toggleClass('hide-on-mobile');
+    if (!$('header').hasClass('with-nav')) {
+        $('header').addClass('with-nav');
+        $('nav').removeClass('hide-on-mobile');
+    } else {
+        $('header').removeClass('with-nav');
+        $('nav').addClass(' hide-on-mobile');
+    }
 });
 // Scroll to div
 $('a[href*=#]:not([href=#])').click(function() {

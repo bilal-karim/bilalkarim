@@ -1119,13 +1119,28 @@ button.mdi {
     .logo, nav, .copyright, .social {
         width: 100%;
     }
+    header {
+        transition: padding 0.3s;
+        height: 66px;
+        transition: height 0.3s;
+        transition-delay: 0.1s;
+    }
+    header.with-nav {
+        height: 109px;
+        transition: height 0.3s;
+    }
     .logo {
         padding: 18px;
     }
     nav {
         font-size: 0.688em;
         text-align: center;
-        margin-bottom: 18px;
+        margin: 0 0 18px 0;
+        opacity: 1;
+        transition: all 0.2s;
+        transition-delay: 0.1s;
+        transform: translateY(0);
+        visibility: visible;
     }
     nav a:hover, nav a:active, nav a:focus {
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -1138,7 +1153,10 @@ button.mdi {
         padding: 6px 12px;
     }
     nav.hide-on-mobile {
-        display: none;
+        opacity: 0;
+        transition: all 0.2s;
+        transform: translateY(5px);
+        visibility: hidden;
     }
     .mobile-menu {
         display: block;
