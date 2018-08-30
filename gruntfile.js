@@ -6,6 +6,7 @@ module.exports = function (grunt) {
             map: {
                 src: [
                     'js/jquery.js',
+                    // 'js/mo.min.js',
                     'js/site.js'
                 ],
                 dest: 'js/all.js'

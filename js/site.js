@@ -22,6 +22,7 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+// Remove animated class
 setTimeout(function() {
     $('.animated').removeClass('fadeInUp');
 }, 700);
