@@ -77,7 +77,7 @@
                     <h1><strong>Movement tracking</strong></h1>
                 </div>
                 <div class="description">
-                    <p class="no-bottom-padding">Track my location using Moves to assemble a year-long dataset of different movements and places visited for understanding where and how I travel around cities.</p>
+                    <p class="no-bottom-padding">Track my location using Moves app to assemble a year-long dataset of different movements and places visited for understanding where and how I travel around cities.</p>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                 <h1><strong>Process</strong></h1>
             </div>
             <div class="description">
-                <p class="no-bottom-padding">Since location plays an important role in determining my curiosity, the UI of the web app had to be map-centric. Furthermore, the UI needed to have good contrast between the background (map) and foreground (data layers). At the end of 2017, I exported the entire collection of movement and places data from Moves in GeoJSON format and imported it into MongoDB. The total number of days I tracked myself was 341. Most of the core web app functionality was built using Google Maps API and Flask. The web app itself was served using Apache on the Google Cloud Platform.</p>
+                <p class="no-bottom-padding">Since location plays an important role in determining my curiosity, the UI of the web app had to be map-centric. Furthermore, it needed to have strong contrast between the map (background) and data layers (foreground). At the end of 2017 with 341 days of tracking, I exported the entire collection of movement and places data from Moves app in GeoJSON format and imported it into MongoDB. Most of the core web app functionality was built using Google Maps API and Flask. The web app itself was served using Apache on the Google Cloud Platform.</p>
             </div>
         </div>
     </div>
@@ -135,13 +135,13 @@
             <div class="line flex align-vertically">
                 <h1><strong>Challenges</strong></h1>
             </div>
-            <p class="no-bottom-padding">Several challenges&mdash;from continually tracking myself to application performance&mdash;were experienced during the development of this project. Additionally, good contrast is needed to highlight the data. Initially I wanted the map style to reflect time of the day, but struggled with technical development.</p>
+            <p class="no-bottom-padding">I initially wanted the map style to reflect time of the day, but struggled with implementing it technically. Furthermore, several other challenges&mdash;from continually tracking myself to application performance&mdash;were experienced.</p>
             <div class="flex mobile-wrap">
                 <div class="half with-padding no-bottom-padding-on-mobile">
-                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Constant tracking.</strong></span> Using Moves on an iPhone 7 to constantly track myself was challenging. Firstly, it greatly affected the device battery life so I had to constantly manage location tracking by turning it off and on. Secondly, I had to get into the habit turning location tracking on if it was off in the first place.</p>
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Constant tracking.</strong></span> Using the Moves app on an iPhone 7 to constantly track myself was challenging. It greatly affected the device battery so I was always carrying a charger or portable battery packs. Because of this, I had to constantly (and manually) manage location tracking.</p>
                 </div>
                 <div class="half with-padding no-bottom-padding-on-mobile">
-                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>App performance.</strong></span> 341 days of movement and places visited was initially a heavy dataset and slow to load. I struggled with loading all of the data on the map at once. After trying multiple techniques, I found success in sending one request to fetch data instead of two, and by using GZIP compression on the server-side.</p>
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>App performance.</strong></span> 341 days of movement and places data were slow to load. I struggled with loading all of the data on the map at once. After trying multiple techniques, I found success in sending one request to fetch data instead of two, and by using GZIP compression on the server-side.</p>
                 </div>
             </div>
         </div>
@@ -155,18 +155,18 @@
             <p class="no-bottom-padding">Some ideas could not make it to the initial release of this project due to technical and cost limitations, but will be worth exploring in future.</p>
             <div class="flex mobile-wrap">
                 <div class="half with-padding no-bottom-padding-on-mobile">
-                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Street view timelapse.</strong></span> I initially wanted to play certain routes with a start and end point in the form of a timelapse using Google Street View, but ran into API and cost limitations.</p>
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Street view timelapse.</strong></span> I would like to experiment with playing certain routes with a start and end point in the form of a timelapse using Google Street View. But the Google Maps API cost and restrictions may make this a challenging task.</p>
                 </div>
                 <div class="half with-padding no-bottom-padding-on-mobile">
-                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Multi-year browsing.</strong></span> Furthermore, I’d love to be able to browse multi-year movement and places data to see how my travel patterns change with time.</p>
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Natural language querying.</strong></span> Using some of the AI and ML services as part of the Google Cloud Platform, I’d love to be able to just ask the web app where I was on a particular day and time, and have it present that information to be on the map.</p>
                 </div>
             </div>
             <div class="flex mobile-wrap">
                 <div class="half with-padding no-bottom-padding-on-mobile">
-                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Deeper photos integration.</strong></span> Currently, Instagram photos exist on a separate page, but it would be better to incorporate them into the map as well. Deeper photos integration with the map can help with telling a complete story of a particular journey.</p>
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Deeper photos integration.</strong></span> Currently, Instagram photos exist on a separate page, but it would be better to incorporate them into the map as well. This can help with telling a complete story of a particular journey.</p>
                 </div>
                 <div class="half with-padding no-bottom-padding-on-mobile">
-                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Natural language querying.</strong></span> Using some of the natural language parsing technologies available as part of the Google Cloud Platform, I’d love to be able to just ask the web app where I was on a particular day and time, and have it present that information to be on the map.</p>
+                    <p class="no-bottom-padding"><span class="grey-grd-text"><strong>Multi-year browsing.</strong></span> Long-term, I’d love to be able to browse multi-year data for movement and places visited to see how my travel patterns change over time.</p>
                 </div>
             </div>
         </div>
