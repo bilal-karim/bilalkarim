@@ -743,33 +743,33 @@ button {
 
 /* ARTICLES */
 
-#thoughts ol {
+#articles ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
     padding: 3em 0;
     color: rgba(16, 16, 16, 0.6);
 }
 
-#thoughts ol li {
+#articles ol li {
     line-height: 1.3;
     margin: 16px 0;
 }
 
-#thoughts ol li:first-child {
+#articles ol li:first-child {
     margin-top: 0;
 }
 
-#thoughts ol li:last-child {
+#articles ol li:last-child {
     margin-bottom: 0;
 }
 
-#thoughts ol li a, .section p a {
+#articles ol li a, .section p a {
     border-bottom: 1px solid rgba(16, 16, 16, 0.1);
     color: inherit;
     transition: color 0.3s, background 0.3s;
 }
 
-#thoughts ol li a:hover, .section p a:hover {
+#articles ol li a:hover, .section p a:hover {
     background: rgba(16, 16, 16, 0.9);
     border-bottom: 1px solid transparent;
     transition: color 0.3s, background 0.3s;
@@ -1141,7 +1141,7 @@ button.mdi {
     .section.wrapper {
         margin: 0 2em;
     }
-    #thoughts ol {
+    #articles ol {
         margin: 0 1em;
     }
     #about {
@@ -1219,11 +1219,11 @@ button.mdi {
     .hero h2 {
         font-size: 0.875em;
     }
-    #thoughts ol {
+    #articles ol {
         padding: 2em 2em 3.5em 2em;
         margin: 0;
     }
-    #thoughts ol li {
+    #articles ol li {
         line-height: 1.5;
     }
     #about.wrapper {
