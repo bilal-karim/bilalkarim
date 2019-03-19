@@ -107,6 +107,10 @@ img {
     width: 100%;
 }
 
+img.rounded {
+    border-radius: 15px;
+}
+
 .mock {
     margin: 3em 0 0 0;
 }
