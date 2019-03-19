@@ -326,6 +326,7 @@ button {
     margin: 1.5em;
     border-radius: 20px;
     background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .section .third {
@@ -334,6 +335,7 @@ button {
     margin: 1.5em 1.5em 0 1.5em;
     border-radius: 20px;
     background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .section .transparent {
@@ -399,6 +401,7 @@ button {
     background: #fff;
     margin: 1.5em 0;
     border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
 .section .process-image.solo {
