@@ -1348,11 +1348,15 @@ button.mdi {
     .mock {
         margin: 1em 0 1.5em 0;
     }
+    .section .process-image, .section .process-image-second {
+        padding: 1em;
+    }
     .section .process-image-second {
         margin-bottom: 1em;
     }
     .overflow {
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
     .add-overflow-padding-on-mobile {
         padding: 0 2em;
