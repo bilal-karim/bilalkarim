@@ -724,14 +724,14 @@ button {
     background: linear-gradient(to right, #0fa5ff 0%, #0079c1 100%);
 }
 
-#work .block .light-blue {
+#work .block .light-blue, .continue .block .light-blue {
     background: rgba(15, 165, 255, 0.2);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 4px;
     transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
-    box-shadow: 0 5px 20px rgba(4, 190, 254, 0.2);
+    box-shadow: 0 5px 20px rgba(15, 165, 255, 0.2);
     z-index: -1;
     border-radius: 20px;
     animation: swivel-reverse 10s 1s infinite;
@@ -753,6 +753,47 @@ button {
     color: #0fa5ff;
     background: -webkit-linear-gradient(#0fa5ff, #0079c1);
     background: linear-gradient(to right, #0fa5ff 0%, #0079c1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+/* PAGERDUTY */
+
+.pd-grd {
+    background: linear-gradient(to right, #06ac38 0%, #047c34 100%);
+}
+
+#work .block .light-pd {
+    background: rgb(6, 172, 56, 0.2);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 4px;
+    transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
+    box-shadow: 0 5px 20px rgb(6, 172, 56, 0.2);
+    z-index: -1;
+    border-radius: 20px;
+    animation: swivel 10s 1s infinite;
+}
+
+.pd-text-shadow {
+    text-shadow: 0 1px 3px #00732e;
+}
+
+.pd-box-shadow {
+    box-shadow: 0 2px 10px rgba(4, 135, 180, 0.7);
+}
+
+.pd-text-color {
+    color: #06ac38;
+}
+
+.pd-grd-text {
+    color: #06ac38;
+    background: -webkit-linear-gradient(#06ac38, #00732e);
+    background: linear-gradient(to right, #06ac38 0%, #00732e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
