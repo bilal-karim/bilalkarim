@@ -771,7 +771,7 @@ button {
     width: 100%;
     position: absolute;
     top: 4px;
-    transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
+    transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
     box-shadow: 0 5px 20px rgb(6, 172, 56, 0.2);
     z-index: -1;
     border-radius: 20px;
@@ -1159,7 +1159,7 @@ footer a:hover {
 }
 
 .icon-email:before {
-    content: '\F065';
+    content: '\F1EE';
     font-size: 20px;
 }
 
