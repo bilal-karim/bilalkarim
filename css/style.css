@@ -1370,10 +1370,10 @@ button.mdi {
         margin: 18px;
     }
     #instafeed a {
-        width: calc(33.3332% - 20px);
+        width: 96px;
     }
     #instafeed a img {
-        height: 92px;
+        height: 96px;
     }
     #instafeed > a:nth-last-child(3), #instafeed > a:nth-last-child(2), #instafeed > a:last-child {
         margin-bottom: 0;
