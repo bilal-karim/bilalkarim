@@ -833,7 +833,7 @@ button {
 
 /* ARTICLES */
 
-#articles ol {
+/* #articles ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
     padding: 3em 0;
@@ -851,15 +851,15 @@ button {
 
 #articles ol li:last-child {
     margin-bottom: 0;
-}
+} */
 
-#articles ol li a, .section p a {
+#about a, .section p a {
     border-bottom: 1px solid rgba(16, 16, 16, 0.25);
     color: inherit;
     transition: color 0.3s, background 0.3s;
 }
 
-#articles ol li a:hover, .section p a:hover {
+#about a:hover, .section p a:hover {
     background: rgba(16, 16, 16, 0.9);
     border-bottom: 1px solid transparent;
     transition: color 0.3s, background 0.3s;
