@@ -427,7 +427,7 @@ button {
 #work .title {
     -webkit-flex: 1;
     flex: 1;
-    padding: 4em 2em;
+    padding: 3em 2em;
 }
 
 #work .title.minify, .continue .title.minify {
