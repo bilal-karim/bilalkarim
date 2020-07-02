@@ -1365,6 +1365,10 @@ button.mdi {
     #about .profile-summary {
         margin-left: 0;
     }
+    #photos a {
+        width: 100%;
+        margin: 0 30px 30px 30px;
+    }
     #photos > a:nth-last-child(3), #photos > a:nth-last-child(2), #photos > a:last-child {
         margin-bottom: 0;
     }
