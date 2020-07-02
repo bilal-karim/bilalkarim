@@ -1365,17 +1365,17 @@ button.mdi {
     #about .profile-summary {
         margin-left: 0;
     }
-    #instafeed {
+    #photos {
         width: calc(100% - 36px);
         margin: 18px;
     }
-    #instafeed a {
+    #photos a {
         width: 96px;
     }
-    #instafeed a img {
+    #photos a img {
         height: 96px;
     }
-    #instafeed > a:nth-last-child(3), #instafeed > a:nth-last-child(2), #instafeed > a:last-child {
+    #photos > a:nth-last-child(3), #photos > a:nth-last-child(2), #photos > a:last-child {
         margin-bottom: 0;
     }
     .social, .copyright {
