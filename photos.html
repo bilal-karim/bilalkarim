@@ -47,7 +47,7 @@
 </header>
 <!--PHOTOS-->
 <div class="content wrapper">
-    <div id="instafeed" class="flex animated fadeInUp"></div>
+    <div id="photos" class="flex animated fadeInUp"></div>
 </div>
 <!--FOOTER-->
 <footer>
@@ -67,19 +67,23 @@
 </footer>
 <!--SCRIPTS-->
 <script src="js/site.min.js"></script>
-<script src="js/instafeed.min.js"></script>
+<script src="js/instagramFeed.min.js"></script>
 <script>
 // Load Instafeed
-var feed = new Instafeed({
-    get: 'user',
-    userId: '284494',
-    clientId: 'd67bdc75c8614723b4d33eb3cd53642c',
-    accessToken: '284494.1677ed0.39f5a38226b84676a087d15847cde57f',
-    limit: 34,
-    resolution: 'standard_resolution',
-    sortBy: 'most-recent'
-});
-feed.run();
+(function($){
+    $(window).on('load', function(){
+        $.instagramFeed({
+            'username': 'beekay',
+            'container': "#photos",
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'callback': null,
+            'styling': false,
+            'items': 12
+        });
+    });
+})(jQuery);
 </script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

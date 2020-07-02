@@ -883,7 +883,7 @@ button {
 
 /* GALLERY */
 
-#instafeed {
+.instagram-gallery {
     width: 100%;
     min-height: 600px;
     -webkit-flex-wrap: wrap;
@@ -894,15 +894,15 @@ button {
     margin: 30px 0 0 0;
 }
 
-#instafeed a {
+#photos a {
     width: calc(33.3332% - 20px);
     margin: 0 0 30px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* overflow: hidden; */
+    display: inline-block;
     border-radius: 20px;
 }
 
-#instafeed a img {
+#photos a img {
     background: #fff;
     display: block;
     width: 100%;
@@ -912,7 +912,7 @@ button {
     transition: transform 0.3s;
 }
 
-#instafeed a img:hover {
+#photos a img:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
