@@ -1189,11 +1189,6 @@ footer a:hover {
     font-size: 20px;
 }
 
-.icon-byte:before {
-    content: '\FBCB';
-    font-size: 20px;
-}
-
 .mdi-menu:before {
     content: "\F35C";
     font-size: 24px;
