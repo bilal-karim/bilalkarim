@@ -893,11 +893,15 @@ button {
     margin: 30px 0 0 0;
 }
 
-#photos {
+#photos, #videos {
     min-height: 780px;
 }
 
-#photos a {
+#videos {
+    min-height: auto;
+}
+
+#photos a, #videos a {
     width: calc(33.3332% - 20px);
     margin: 0 0 30px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -905,7 +909,7 @@ button {
     border-radius: 20px;
 }
 
-#photos a img {
+#photos a img, #videos a img {
     background: #fff;
     display: block;
     width: 100%;
@@ -915,7 +919,11 @@ button {
     transition: transform 0.3s;
 }
 
-#photos a img:hover {
+#videos a img {
+    height: auto;
+}
+
+#photos a img:hover, #videos a img:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
@@ -929,6 +937,7 @@ footer {
     padding: 1em;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 footer p {
@@ -1363,11 +1372,11 @@ button.mdi {
     #about .profile-summary {
         margin-left: 0;
     }
-    #photos a {
+    #photos a, #videos a {
         width: 100%;
         margin: 0 30px 30px 30px;
     }
-    #photos > a:nth-last-child(3), #photos > a:nth-last-child(2), #photos > a:last-child {
+    #photos > a:nth-last-child(3), #photos > a:nth-last-child(2), #photos > a:last-child, #videos > a:nth-last-child(3), #videos > a:nth-last-child(2), #videos > a:last-child {
         margin-bottom: 0;
     }
     .social, .copyright {
