@@ -454,20 +454,26 @@ button {
 #work a, .label, .continue a {
     display: inline-block;
     padding: 10px 14px;
-    border-radius: 30px;
-    background: #fff;
+    border-radius: 10px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     font-size: 0.750em;
+    font-weight: 500;
     margin: 10px 0 0 0;
-    transition: box-shadow 0.3s;
+    transition: all 0.3s;
 }
 
 #work a:after, .continue a:after {
     content: "\F054";
-    font-weight: 400;
     font-family: 'Material Design Icons';
     margin-left: 6px;
     transition: margin 0.2s;
+}
+
+#work a:hover, .continue a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
 }
 
 #work a:hover:after, .continue a:hover:after {
@@ -532,13 +538,13 @@ button {
     text-shadow: 0 1px 3px rgba(217, 101, 8, 1);
 }
 
-.orange-box-shadow {
+/* .orange-box-shadow {
     box-shadow: 0 2px 10px rgba(217, 101, 8, 0.7);
 }
 
 .orange-text-color {
     color: #f09819 !important;
-}
+} */
 
 .orange-grd-text {
     color: #f09819;
@@ -574,13 +580,13 @@ button {
     text-shadow: 0 1px 3px rgba(28, 42, 60, 1);
 }
 
-.grey-box-shadow {
+/* .grey-box-shadow {
     box-shadow: 0 2px 10px rgba(28, 42, 60, 0.7);
 }
 
 .grey-text-color {
     color: #375e78;
-}
+} */
 
 .grey-grd-text {
     color: #375e78;
@@ -616,13 +622,13 @@ button {
     text-shadow: 0 1px 3px rgba(10, 110, 122, 0.7);
 }
 
-.teal-box-shadow {
+/* .teal-box-shadow {
     box-shadow: 0 2px 10px rgba(10, 110, 122, 0.7);
 }
 
 .teal-text-color {
     color: #189dad;
-}
+} */
 
 .teal-grd-text {
     color: #189dad;
@@ -658,13 +664,13 @@ button {
     text-shadow: 0 1px 3px rgba(0, 156, 45, 1);
 }
 
-.green-box-shadow {
+/* .green-box-shadow {
     box-shadow: 0 2px 10px rgba(0, 156, 45, 0.7);
 }
 
 .green-text-color {
     color: #009c2d;
-}
+} */
 
 .green-grd-text {
     color: #009c2d;
@@ -700,13 +706,13 @@ button {
     text-shadow: 0 1px 3px rgba(108, 82, 77, 1);
 }
 
-.copper-box-shadow {
+/* .copper-box-shadow {
     box-shadow: 0 2px 10px rgba(108, 82, 77, 0.7);
 }
 
 .copper-text-color {
     color: #956356;
-}
+} */
 
 .copper-grd-text {
     color: #956356;
@@ -741,13 +747,13 @@ button {
     text-shadow: 0 1px 3px #0487b4;
 }
 
-.blue-box-shadow {
+/* .blue-box-shadow {
     box-shadow: 0 2px 10px rgba(4, 135, 180, 0.7);
-}
+} */
 
-.blue-text-color {
+/* .blue-text-color {
     color: #0fa5ff;
-}
+} */
 
 .blue-grd-text {
     color: #0fa5ff;
@@ -782,13 +788,13 @@ button {
     text-shadow: 0 1px 3px #00732e;
 }
 
-.pd-box-shadow {
+/* .pd-box-shadow {
     box-shadow: 0 2px 10px rgba(4, 135, 180, 0.7);
 }
 
 .pd-text-color {
     color: #06ac38;
-}
+} */
 
 .pd-grd-text {
     color: #06ac38;
