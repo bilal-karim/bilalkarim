@@ -682,6 +682,48 @@ button {
     text-fill-color: transparent;
 }
 
+/* THE PROPHEC */
+
+.red-grd {
+    background: linear-gradient(to right, #cc5150 0%, #8b0303 100%);
+    /* box-shadow: -10px 10px 0 rgba(80, 204, 96, 0.2); */
+}
+
+#work .block .light-red, .continue .block .light-red {
+    background: rgba(204, 81, 80, 0.25);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 4px;
+    transform: skew(4deg, 4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
+    box-shadow: 0 5px 20px rgba(204, 81, 80, 0.2);
+    z-index: -1;
+    border-radius: 30px;
+    animation: swivel-reverse 10s 1s infinite;
+}
+
+.red-text-shadow {
+    text-shadow: 0 1px 3px rgba(139, 3, 3, 1);
+}
+
+/* .red-box-shadow {
+    box-shadow: 0 2px 10px rgba(139, 3, 3, 0.7);
+}
+
+.red-text-color {
+    color: #8b0303;
+} */
+
+.red-grd-text {
+    color: #8b0303;
+    background: -webkit-linear-gradient(#cc5150, #9c0000);
+    background: linear-gradient(to right, #cc5150 0%, #9c0000 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
 /* H WEDS A */
 
 .copper-grd {
@@ -723,6 +765,49 @@ button {
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
 }
+
+/* PROCESS */
+
+.purple-grd {
+    background: linear-gradient(to right, #5051cc 0%, #4C1D95 100%);
+    /* box-shadow: 10px 10px 0 rgba(148, 113, 107, 0.2); */
+}
+
+#work .block .light-purple, .continue .block .light-purple {
+    background: rgba(80, 81, 204, 0.25);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 4px;
+    transform: skew(-4deg, -4deg) scale3d(1.05, 0.90, 1) rotate3d(0, 0, 0, 35deg);
+    box-shadow: 0 5px 20px rgba(80, 81, 204, 0.2);
+    z-index: -1;
+    border-radius: 30px;
+    animation: swivel 10s 1s infinite;
+}
+
+.purple-text-shadow {
+    text-shadow: 0 1px 3px rgba(76, 29, 149, 1);
+}
+
+/* .purple-box-shadow {
+    box-shadow: 0 2px 10px rgba(76, 29, 149, 0.7);
+}
+
+.purple-text-color {
+    color: #4C1D95;
+} */
+
+/* .purple-grd-text {
+    color: #4C1D95;
+    background: -webkit-linear-gradient(#5051cc, #4C1D95);
+    background: linear-gradient(to right, #5051cc 0%, #4C1D95 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+} */
+
 
 /* RUBIKLOUD */
 
