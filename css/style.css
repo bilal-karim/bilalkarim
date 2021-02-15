@@ -408,6 +408,11 @@ button {
     border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
+.section .process-image video {
+    width: 100%;
+    object-fit: cover;
+}
+
 .section .process-image.solo {
     margin-bottom: 0;
 }
