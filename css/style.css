@@ -564,7 +564,7 @@ button {
 /* VISUALOG */
 
 .grey-grd {
-    background: linear-gradient(to right, #375e78 0%, #1C2A3C 100%);
+    background: linear-gradient(to right, #375e78 0%, #182434 100%);
     /* box-shadow: -10px 10px 0 rgba(55, 94, 120, 0.2); */
 }
 
@@ -582,11 +582,11 @@ button {
 }
 
 .grey-text-shadow {
-    text-shadow: 0 1px 3px rgba(28, 42, 60, 1);
+    text-shadow: 0 1px 3px rgba(24, 36, 52, 1);
 }
 
 /* .grey-box-shadow {
-    box-shadow: 0 2px 10px rgba(28, 42, 60, 0.7);
+    box-shadow: 0 2px 10px rgba(24, 36, 52, 0.7);
 }
 
 .grey-text-color {
@@ -595,8 +595,8 @@ button {
 
 .grey-grd-text {
     color: #375e78;
-    background: -webkit-linear-gradient(#375e78, #1C2A3C);
-    background: linear-gradient(to right, #375e78 0%, #1C2A3C 100%);
+    background: -webkit-linear-gradient(#375e78, #182434);
+    background: linear-gradient(to right, #375e78 0%, #182434 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -606,7 +606,7 @@ button {
 /* MONEY AFTER GRADUATION */
 
 .teal-grd {
-    background: linear-gradient(to right, #189dad 0%, #00cdac 100%);
+    background: linear-gradient(to right, #00cdac 0%, #189dad 100%);
     /* box-shadow: 10px 10px 0 rgba(0, 205, 172, 0.2); */
 }
 
@@ -732,7 +732,7 @@ button {
 /* H WEDS A */
 
 .copper-grd {
-    background: linear-gradient(to right, #956356 0%, #debeb2 100%);
+    background: linear-gradient(to right, #c9aea4 0%, #956356 100%);
     /* box-shadow: 10px 10px 0 rgba(148, 113, 107, 0.2); */
 }
 
