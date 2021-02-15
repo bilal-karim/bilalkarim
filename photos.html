@@ -17,7 +17,7 @@
 <meta name="twitter:creator" content="@beekay__">
 <meta name="twitter:title" content="Bilal Karim – Designer • Coder • Maker">
 <meta name="twitter:description" content="Product designer building user experiences through the intersection of design + code.">
-<title>Photos &ndash; Instagram Posts by Bilal Karim</title>
+<title>Photos &ndash; Unsplash &amp; Instagram Posts by Bilal Karim</title>
 <link rel="stylesheet" href="css/style.min.css" type="text/css">
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
@@ -53,15 +53,42 @@
             <h1>I take photos and share them on <a href="https://instagram.com/beekay">Instagram</a>. Some of these are also available on <a href="https://unsplash.com/@beekay">Unsplash</a> to use for free.</h1>
         </div>
     </div>
+    <!--DAILY PHOTO FROM UNSPLASH-->
     <div class="section wrapper">
-        <div class="line flex align-vertically">
-            <h1><strong>Instagram posts</strong></h1>
+        <div class="line bottom-line-margin flex align-vertically">
+            <h1><strong>Daily photo feed from Unsplash</strong></h1>
+        </div>
+        <div id="unsplash-feed" class="flex wrap space-between">
+            <div class="daily">
+                <a href="https://unsplash.com/@beekay">
+                    <img src="https://source.unsplash.com/user/beekay/daily/" alt="Daily Photo from Unsplash by @beekay">
+                </a>
+            </div>
+            <div class="feed flex wrap space-between">
+                <a href="https://unsplash.com/photos/mZsYmGTOABM">
+                    <img src="https://source.unsplash.com/mZsYmGTOABM/" alt="Vintage and minimal bicycle by @beekay on Unsplash">
+                </a>
+                <a href="https://unsplash.com/photos/jxC1bimS2Lw">
+                    <img src="https://source.unsplash.com/jxC1bimS2Lw/" alt="Crew Collective & Cafe by @beekay on Unsplash">
+                </a>
+                <a href="https://unsplash.com/photos/D2jCvTXSAHk/">
+                    <img src="https://source.unsplash.com/D2jCvTXSAHk/" alt="Blue Porsche by @beekay on Unsplash">
+                </a>
+                <a href="https://unsplash.com/photos/oa46NUS8H-o/">
+                    <img src="https://source.unsplash.com/oa46NUS8H-o/" alt="Calgary Public Library by @beekay on Unsplash">
+                </a>
+            </div>
         </div>
     </div>
-<!--PHOTOS-->
-<div class="content wrapper">
-    <div id="photos" class="flex animated fadeInUp"></div>
-</div>
+    <!--INSTAGRAM FEED-->
+    <div class="section wrapper">
+        <div class="line bottom-line-margin flex align-vertically">
+            <h1><strong>Recent posts from Instagram</strong></h1>
+        </div>
+    </div>
+    <div class="content wrapper">
+        <div id="photos" class="flex animated fadeInUp"></div>
+    </div>
 <!--FOOTER-->
 <footer>
     <div class="flex space-between align-vertically wrapper mobile-wrap reverse-on-mobile">
@@ -92,7 +119,7 @@
             'display_gallery': true,
             'callback': null,
             'styling': false,
-            'items': 12
+            'items': 6
         });
     });
 })(jQuery);
