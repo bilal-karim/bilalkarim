@@ -18,7 +18,7 @@
 <meta name="twitter:title" content="Bilal Karim – Designer • Coder • Maker">
 <meta name="twitter:description" content="Product designer building user experiences through the intersection of design + code.">
 <title>Photos &ndash; Unsplash &amp; Instagram Posts by Bilal Karim</title>
-<link rel="stylesheet" href="css/style.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
 </head>
@@ -56,7 +56,7 @@
     <!--DAILY PHOTO FROM UNSPLASH-->
     <div class="section wrapper">
         <div class="line bottom-line-margin flex align-vertically">
-            <h1><strong>Daily photo feed from Unsplash</strong></h1>
+            <h1><strong>Photos from Unsplash</strong></h1>
         </div>
         <div id="unsplash-feed" class="flex wrap space-between">
             <div class="daily">
@@ -64,7 +64,7 @@
                     <img src="https://source.unsplash.com/user/beekay/daily/" alt="Daily Photo from Unsplash by @beekay">
                 </a>
             </div>
-            <div class="feed flex wrap space-between">
+            <div class="feed flex full wrap space-between">
                 <a href="https://unsplash.com/photos/mZsYmGTOABM">
                     <img src="https://source.unsplash.com/mZsYmGTOABM/" alt="Vintage and minimal bicycle by @beekay on Unsplash">
                 </a>
@@ -87,8 +87,9 @@
         </div>
     </div>
     <div class="content wrapper">
-        <div id="photos" class="flex animated fadeInUp"></div>
+        <div id="instafeed" class="flex"></div>
     </div>
+</div>
 <!--FOOTER-->
 <footer>
     <div class="flex space-between align-vertically wrapper mobile-wrap reverse-on-mobile">
@@ -106,23 +107,15 @@
 </footer>
 <!--SCRIPTS-->
 <script src="js/site.min.js"></script>
-<script src="js/instagramFeed.min.js"></script>
-<script>
-// Load Instafeed
-(function($){
-    $(window).on('load', function(){
-        $.instagramFeed({
-            'username': 'beekay',
-            'container': "#photos",
-            'display_profile': false,
-            'display_biography': false,
-            'display_gallery': true,
-            'callback': null,
-            'styling': false,
-            'items': 6
-        });
+<script src="https://ig.instant-tokens.com/users/5eb13777-6315-4fa6-a2a6-7c1ba778e7f1/instagram/17841400854820004/token.js?userSecret=v83t5gpmerh60gco8ppnj4"></script>
+<script src="js/instafeed.min.js"></script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+      accessToken: InstagramToken,
+      limit: 27,
+      template: '<a href="{{link}}"><img src="{{image}}" alt="{{caption}}"/></a>'
     });
-})(jQuery);
+    feed.run();
 </script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
