@@ -987,7 +987,7 @@ button {
 
 /* GALLERY */
 
-#instafeed {
+#instafeed, .reels-feed {
     width: 100%;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
